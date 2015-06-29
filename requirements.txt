@@ -1,0 +1,6 @@
+django==1.8.2
+selenium==2.46.0
+feedparser==5.2.0.post1
+beautifulsoup4==4.3.2
+pylint==1.4.3
+nltk==3.0.3
