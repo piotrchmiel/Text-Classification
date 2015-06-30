@@ -1,36 +1,35 @@
-__author__ = 'Piotr'
+__author__ = 'Piotr Chmiel'
 
-import feedparser
-import urllib
-from bs4 import BeautifulSoup
+from collections import defaultdict
+from feedparser import parse
+from web_crawler.website_critera import CriteriaManager
+class FeedProvider(object):
 
-d = feedparser.parse('http://sports.yahoo.com/mlb/rss.xml')
+    def __init__(self, url):
+        self.feed = parse(url)
 
-url = urllib.parse.unquote(d.entries[0]['link'].split('*')[1])
+    def get_article_urls(self):
+        return [CriteriaManager.format_url(entry.link) for entry in self.feed.entries]
 
-print(url)
 
-try:
-    page = urllib.request.urlopen(url)
-except:
-    print(url)
-else:
-    from selenium import webdriver
-    soup = BeautifulSoup(page.read().decode('utf8'))
-    print (soup.title.string)
-    body = soup.find("div", class_="body")
-    for tag in body.find_all("p"):
-        print(tag.getText())
+def get_source(source_file_name):
+    source_handler = open(source_file_name)
+    feed_by_category = defaultdict(list)
 
-    browser = webdriver.Firefox()
-    browser.get(url)
-    html_source = browser.page_source
-    browser.close()
-    soup = BeautifulSoup(html_source)
-    section = soup.find("section", id="mediacontentrelatedstory")
+    for line in source_handler:
+        if line.strip()[0] == '#':
+            continue
+        else:
+            temp = line.strip().split(" ")
+            feed_by_category[temp[0]].append(temp[1])
 
-    for tag in soup.find("section", id="mediacontentrelatedstory").findAll('a', href=True):
-        print((url.split('/'))[2] + tag['href'])
+    source_handler.close()
+
+    return feed_by_category
+
+
+
+
 
 
 

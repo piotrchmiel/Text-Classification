@@ -1,0 +1,2 @@
+SPORT http://sports.yahoo.com/mlb/rss.xml
+SPORT http://sports.yahoo.com/ski/rss.xml
