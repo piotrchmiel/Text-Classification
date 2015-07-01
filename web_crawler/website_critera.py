@@ -54,4 +54,4 @@ class CriteriaManager(object):
             if criterium.meet_website(url):
                 return criterium.format_url(url)
 
-        return None
+        return url
