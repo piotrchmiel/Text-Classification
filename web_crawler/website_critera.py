@@ -17,10 +17,7 @@ class WebsiteCriteria(object):
 class YahooCriteria(WebsiteCriteria):
 
     def meet_website(self, url):
-        if 'yahoo' in url:
-            return True
-        else:
-            return False
+        return 'yahoo' in url
 
     def get_parser(self, url):
         return YahooParser(url)
@@ -34,10 +31,7 @@ class YahooCriteria(WebsiteCriteria):
 class ReutersCriteria(WebsiteCriteria):
 
     def meet_website(self, url):
-        if 'feeds.reuters' in url:
-            return True
-        else:
-            return False
+        return 'feeds.reuters' in url
 
     def get_parser(self, url):
         return ReutersParser(url)

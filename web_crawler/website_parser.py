@@ -1,12 +1,13 @@
 __author__ = 'Piotr Chmiel'
-import re
+
 from bs4 import BeautifulSoup
+from re import sub
 from selenium import webdriver
-import urllib
+from urllib.request import urlopen
 
 def get_html_content(url):
     try:
-        webpage = urllib.request.urlopen(url)
+        webpage = urlopen(url)
     except:
         print("Connection error " + url)
         return ""
@@ -43,11 +44,11 @@ class YahooParser(DefaultParser):
         super().__init__(url)
 
     def get_title(self):
-        return re.sub("- Yahoo.+","",self.soup.title.string).strip()
+        return sub("- Yahoo.+","",self.soup.title.string).strip()
 
     def get_article(self):
         article_body = self.soup.find("div", class_="body")
-        if article_body != None:
+        if article_body is not None:
             subparagraphs_tags = article_body.find_all("p")
             if subparagraphs_tags:
                 return "\n".join([paragraph_tag.getText().strip() for paragraph_tag in subparagraphs_tags])

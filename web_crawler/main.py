@@ -18,11 +18,11 @@ def main():
         for rss_link in rss_link_by_category[category]:
             feed_provider = FeedProvider(rss_link)
             urls = feed_provider.get_article_urls()
-            print (urls)
+            print(urls)
             for url in urls:
-                if url != None:
+                if url is not None:
                     parser = CriteriaManager.get_parser(url)
-                    if parser != None:
+                    if parser is not None:
                         article_title = parser.get_title()
                         article = parser.get_article()
                         print(article_title)

@@ -14,17 +14,13 @@ class FeedProvider(object):
 
 
 def get_source(source_file_name):
-    source_handler = open(source_file_name)
     feed_by_category = defaultdict(list)
 
-    for line in source_handler:
-        if line.strip()[0] == '#':
-            continue
-        else:
-            temp = line.strip().split(" ")
-            feed_by_category[temp[0]].append(temp[1])
-
-    source_handler.close()
+    with open(source_file_name) as source_handler:
+        for line in source_handler:
+            if not line.strip()[0] == '#':
+                temp = line.strip().split(" ")
+                feed_by_category[temp[0]].append(temp[1])
 
     return feed_by_category
 
