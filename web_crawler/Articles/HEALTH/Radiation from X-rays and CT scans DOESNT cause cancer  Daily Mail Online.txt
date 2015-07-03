@@ -1,0 +1,22 @@
+http://www.dailymail.co.uk/health/article-3145766/Radiation-X-rays-CT-scans-DOESN-T-cause-cancer-leading-oncologist-declares.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490
+Radiation from X-rays and CT scans DOESN'T cause cancer | Daily Mail Online
+
+Countless scientific studies have debated the issue - does radiation from X-rays and CT scans cause cancer?
+At very high doses the evidence is clear, scientists say - the answer is yes.
+But one oncologist from Loyola University in Chicago now points to 'serious flaws' in the theory, when considering everyday exposure to radiation during medical scans.
+Dr James Welsh said the reliance of past research on unproven statistical models is important.
+'Although radiation is known to cause cancer at high doses and high-dose rates, no data have ever unequivocally demonstrated the induction [start] of cancer following exposure to low doses and dose rates,' said Dr Welsh, and his co-author Dr Jeffry Siegel.
+They argue studies that have identified a link between medical imaging and cancer, typically use a model known as 'linear no-threshold' (LNT).
+In LNT, the well-established cancer-causing effects of high doses of radiation are simply extrapolated downward in a straight line to low doses.
+The LNT model assumes there is no safe dose of radiation, no matter how small.
+
+But although LNT is used by regulators around the world, the model is 'of questionable validity, utility and applicability for estimation of cancer risks,' Dr Welsh and Dr Siegel said.
+
+Contrary to the LNT model, there is compelling evidence that the human body has evolved the ability to repair damage from low-dose radiation.
+For example, the mutation rate caused by low-dose background radiation in the environment is 2.5 million times lower than the rate of spontaneous mutations in the body.
+So even if the LNT model were true, the small increase in mutations caused by low-dose radiation from medical imaging would be unlikely to overwhelm the body's defences.
+They add studies purporting to find a cancer link to medical imaging radiation have other flaws besides the questionable LNT model.
+For example, Dr Welsh and Dr Siegel highlight, two recent studies suggested possible increased cancer risks from low-radiation doses associated with paediatric CT scans.
+But these cancers are likely due to the medical conditions that prompted the need for a CT scan, rather than the radiation exposure, the pair noted.
+While many people focus on the apparent risks of radiation in medical imaging, 'the more significant and actual risks associated with not undergoing an imaging procedure or undergoing a more invasive exploratory surgery are generally being ignored in both the scientific literature and the popular media,' they added.
+The views first appeared in the journal Technology in Cancer Research & Treatment.

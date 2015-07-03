@@ -1,0 +1,22 @@
+http://telegraph.feedsportal.com/c/32726/f/579309/s/47c6cf4f/sc/24/l/0L0Stelegraph0O0Cnews0Cpolitics0C117137750CHalf0Eof0Eall0ETory0Eministers0Ehave0Etried0Edrugs0Eclaims0ENorman0ELamb0Bhtml/story01.htm
+Half of all Tory ministers have tried drugs, claims Norman Lamb - Telegraph
+
+By 
+											Christopher Hope, Chief Political Correspondent
+7:36PM BST 02 Jul 2015
+Comments
+Scores of Conservative Government ministers have “almost certainly” tried illegal drugs, according to a senior Liberal Democrat MP.
+Speaking at an event organised by the Institute of Public Policy Research thinktank on Wednesday evening, Norman Lamb, the MP for North Norfolk, said that more half of ministers in this Government had smoked cannabis.
+He described the UK’s current drugs laws as pathetic and a “monumental failure of public policy”.
+Mr Lamb worked with many of the current Conservative ministers when he was a care minister in the Coalition.
+.tg-pullquote__global__group{zoom: 1;}.tg-pullquote__global__group:before, .tg-pullquote__global__group:after{content: ""; display: table;}.tg-pullquote__global__group:after{clear: both;}.tg-pullquote__inline{float:left;}.tg-pullquote__content{margin: 0 20px 10px 0px; font-size:18px; line-height:23px; font-family:georgia; width:260px; float:left;}.tg-pullquote__content--mobile{float: none; font-size: 18px; margin-left: 4.687%; margin-right: 4.687%; width: 90.626%;}.tg-pullquote__title{font-family:arial; font-weight:bold; font-size:16px; border-top:1px dotted #000000;}.tg-pullquote__quote{color:#007A8F; font-style:italic; margin-top:5px; margin-bottom:5px;}.tg-pullquote__attribution{color:#787878; margin-bottom:5px;}.tg-pullquote__source{}.tg-pullquote__source__link{color:#234B7B; outline:0; text-decoration:none;}.tg-pullquote__source__link:hover{border-bottom: 1px dotted #122842; color: #122842;}.tg-pullquote__share{float:right;}.tg-pullquote__share--icon{background-image:url("http://s.telegraph.co.uk/graphics/pullQuotes/assets/share_sprite.png"); background-image: url("http://s.telegraph.co.uk/graphics/pullQuotes/assets/share_sprite.svg"), none; width:26px; height:26px;}.tg-pullquote__shareLink{border-bottom:none;}.tg-pullquote__shareLink:hover{border-bottom:none !important;}.tg-pullquote__share--twitter{margin-right:5px;}.tg-pullquote__share--facebook{background-position: 26px 0;}
+"More than half of this government...will have taken drugs in their younger years” 
+  
+
+
+(function(){var meta=document.getElementsByName('DCSext.Platform'); if( meta.length===0) return; if( meta[0].getAttribute('content') !=='mobile')return; var targets=document.querySelectorAll('.tg-pullquote__content'); var len=targets.length; while( len-- ){targets[ len].className +=' tg-pullquote__content--mobile';}})();document.getElementById('tg-pullquote143584846898898').innerHTML = '<div id="tg-pullquote__shareContainer" class="tg-pullquote__share tg-pullquote__global__group"><a class="tg-pullquote__inline tg-pullquote__shareLink" target="_blank" href="http://twitter.com/intent/tweet?text=%22More%20than%20half%20of%20this%20government...will%20have%20taken%20drugs%20in%20their%20younger%20years%E2%80%9D&amp;url='+window.location.href+'?WT.mc_id=tmgoff_pq_tw_20150423"><div class="tg-pullquote__share--icon tg-pullquote__share--twitter"> </div></a><a class="tg-pullquote__inline tg-pullquote__shareLink" href="http://www.facebook.com/sharer.php?u='+window.location.href+'?WT.mc_id=tmgoff_pq_fb_20150423" target="_blank"><div class="tg-pullquote__share--icon tg-pullquote__share--facebook"> </div></a></div>';
+He said: “We have the crazy situation that, almost certainly, more than half of this government – half of the government ministers in a Conservative government – will have taken drugs in their younger years.”
+“They put it down, in a very middle-class way, to youthful indiscretion, while other fellow citizens end up criminalised and their careers blighted as a result of taking a substance that is less dangerous than substances that are entirely legal.”
+• BBC journalists to outnumber Lib Dem MPs at party conference by 25 to 1
+Mr Lamb has previously called for the UK to legalise, regulate and tax the sale of cannabis, arguing that the UK should draw on examples from US states such as Colorado, which legalised the possession of small amounts of marijuana for recreational use by over-21s in November 2012.
+David Cameron, the Prime Minister, was punished for smoking cannabis at Eton in 1982, weeks before his O-level exams, according to a 2007 biography.

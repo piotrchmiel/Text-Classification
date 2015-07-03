@@ -1,0 +1,28 @@
+http://www.dailymail.co.uk/news/article-3146829/Four-years-schedule-26million-budget-NHS-computer-delivered-data-just-one-customer.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490
+NHS computer system is 4 years behind schedule and £26m over budget | Daily Mail Online
+
+The NHS has blown £40million on an IT project which still doesn’t work properly and is likely to be scrapped in two years’ time, MPs have warned.
+The system was set up in 2007 to allow information to be sent from GP surgeries to NHS officials, mainly to work out how much funding they should receive.
+It was due to be launched in 2009/10 but only got off the ground last year, four years too late.
+An investigation by the National Audit Office found around £5.5million was wasted in 'write-offs', while it is not certain that all aspects of the system will actually work.
+The report said that it will almost certainly be replaced in two years’ time because it will be deemed out-of-date.
+
+Of the four departments, including Public Health England and clinical commissioning groups, who were supposed to use the system, only NHS England has so far received any information.
+The report said The General Practice Extraction Service (GPES) programme will likely never be able to provide an NHS-wide service as planned.
+The Health and Social Care Information Centre, which inherited the scheme in 2013, has also admitted that only parts of the system can be used to build a replacement.
+
+Other findings say using the service is 'time consuming' as it depends upon specialist HSCIC staff having to manually input information, while some areas have yet to be tested.
+The project was meant to enable NHS organisations to monitor the quality of health services provided by GPs as well as plan and pay for health services and aid medical research.
+The report said the service will continue to operate in the short-term as it is used to determine payments to GPs across the country, which no other system can do.
+Chair of the Committee of Public Accounts, Labour MP Meg Hillier, said: 'Failed Government IT projects have long been an expensive cliche and, sadly for the taxpayer and service user, this is no exception.
+'The expected cost of GPES ballooned from £14 million to £40 million during planning, with at least £5.5 million wasted on write-offs and delay costs.
+'GPES has managed to provide data for just one customer - NHS England - and the data was received four years later than originally planned.
+'While taxpayers are left picking up the tab for this failure, customers who could benefit, such as research and clinical audit organisations, are waiting around for the system to deliver what they need to improve our health service.'
+Controversially, this is the same computer system that NHS officials intend to use next year to launch a controversial project to harvest confidential patient information.
+This is the Care.Data scheme whereby details about patients past illnesses and prescriptions will be collected on a database and used to analyse trends.
+The project was due to begin last year but was postponed following objections by doctors and campaigners who worried patient confidentiality would be breached.
+The GPES scheme was started by the NHS Information Centre in 2007 but taken on by the HSCIC when it came into being in April 2013.
+A HSCIC spokeswoman said: 'The report is clear significant issues occurred in the years before the inception of the HSCIC, which was created two years ago with a new mandate, structure and senior leadership team.
+'We are equally clear that upon our creation we took full responsibility for delivering a data extraction service that is operationally and financially efficient.
+'Our focus is on developing a suitable service that meets the needs of the NHS and patients and our first priority was to stabilise the service to make sure it could make payments to more than 8,000 GP practices in England.
+'We ensured this happened and have so far supported payments worth approximately £1.7 billion, covering important care areas like dementia.'
