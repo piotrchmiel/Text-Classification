@@ -1,0 +1,38 @@
+http://feeds.reuters.com/~r/reuters/healthNews/~3/MGourk57ZnE/story01.htm
+Insulin pump may cut risk of heart disease deaths with diabetes
+
+(Reuters Health) - People with type 1 diabetes must control their blood sugar with insulin, but getting it automatically from an implanted pump may also help to stave off death from heart disease, according to a large Scandinavian study.
+
+Among more than 18,000 type 1 diabetics in Sweden followed over time, those with an insulin pump were about half as likely to die of heart-related causes, and 25 percent less likely to die of any cause, compared to those who injected themselves with insulin many times a day.
+
+“Our study shows that treatment with an insulin pump almost halves the risk of cardiovascular mortality,” said lead study author Dr. Isabelle Steineck from Aarhus University Hospital in Denmark.
+
+“Personally I think that more persons with type 1 diabetes could benefit from using an insulin pump as long as they get all the right education about the pump and are able to understand how to use it,” she told Reuter’s Health in an email.
+
+Insulin pumps deliver insulin 24 hours a day through a catheter that is placed under the skin. The insulin is delivered in either a steady measured and continuous dose, or if more is needed, such as at mealtime, the dose can be increased. This system is designed to more closely mimic the body's normal release of insulin.
+
+Previous studies, the authors point out in the journal BMJ, have shown that insulin pumps provide better control of blood sugar than multiple daily injections.
+
+And past research has shown that even with fairly well-controlled blood sugar, people with diabetes have a risk of death from cardiovascular causes, and any cause, about double that of the general population. When blood sugar is poorly controlled, the risk is several times higher, the study team notes.
+
+For the new analysis, Steineck and her team looked at 18,168 patients with type 1 diabetes in the Swedish National Diabetes Register. Of these, 15,727 controlled their diabetes with multiple daily injections of insulin, while the other 2,441 patients used implanted insulin pumps. The group was followed for almost seven years, until December 2012.
+
+The study team analyzed the rates of fatal coronary heart disease, fatal cardiovascular disease (coronary heart disease or stroke) and death from all causes.
+
+Using an insulin pump was associated with a 45 percent reduction in risk of fatal coronary heart disease compared to using injected insulin, a 42 percent risk reduction for fatal cardiovascular disease and a 27 percent lower risk of dying from any cause.
+
+There were some differences between the two groups, the researchers note. Patients who used insulin pumps tended to be somewhat younger, had lower blood pressure and less heart disease, were more active, smoked less and were better educated.
+
+But when the authors did a second analysis that only included the 16,427 patients without any history of cardiovascular disease, heart failure or a type of abnormal heart rhythm called atrial fibrillation, the results were similar to those of the whole group.
+
+Steineck and her team point out, however, that they don’t know what other factors could have influenced their results. For example, better education and more frequent monitoring of blood sugar among insulin pump users could have helped lower their risk of heart disease.
+
+“We evaluated the patients who used insulin pump therapy and do not know if the observed effect is attributable to continuous infusion of insulin or that some, if not all, of the effect is attributable to intensified glucose monitoring, increased motivation to control blood glucose, or a better knowledge about having diabetes type 1,” they write.
+
+Dr. Rubina Heptulla, chief of pediatric endocrinology at Albert Einstein College of Medicine/Montefiore Health System in New York, agreed that the study cannot prove cause and effect because it is only based on observation of what happened over the years.
+
+“But even though the randomized controlled trials are the gold standard, we really can’t do that kind of study in this type of situation,” Heptulla said. “Nobody would agree to that, so we have to accept that this is a very large study and it is giving us good data.”
+
+The patients were also followed for a long time, “so this gives us some idea about long term outcomes,” Heptulla said.
+
+SOURCE: bit.ly/1BZCQje BMJ, online June 22, 2015.

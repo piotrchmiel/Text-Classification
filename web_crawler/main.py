@@ -23,12 +23,29 @@ def main():
                 if url is not None:
                     parser = CriteriaManager.get_parser(url)
                     if parser is not None:
+                        print(url)
                         article_title = parser.get_title()
-                        article = parser.get_article()
-                        print(article_title)
-                        print (article)
-                        break
+                        if article_title is not None:
+                            path = os.getcwd() + "/Articles/" + category + "/" + valid_filename(article_title) + ".txt"
+                            if not os.path.exists(path):
+                                article = parser.get_article()
+                                if article is not None:
+                                    article = article.encode("utf-8")
+                                    print(article_title)
+                                    print(article)
+                                    with open(path, "w", encoding='utf-8') as fh:
+                                        fh.write(url + "\n")
+                                        fh.write(article_title + "\n\n")
+                                        fh.write(article.decode(encoding='UTF-8', errors="replace"))
+                                else:
+                                    print("Article is None")
+                            else:
+                                print("Path exists")
+                        else:
+                            print("Title is none")
 
-
+def valid_filename(filename):
+    valid_chars = '-_.() abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+    return ''.join(c for c in filename if c in valid_chars)
 if __name__ == '__main__':
     main()

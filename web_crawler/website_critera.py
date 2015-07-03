@@ -23,7 +23,7 @@ class YahooCriteria(WebsiteCriteria):
         return YahooParser(url)
 
     def format_url(self, url):
-        if "sport" in url:
+        if "sport" in url and "*" in url:
             return unquote(url.split('*')[1])
         else:
             return url
@@ -36,9 +36,45 @@ class ReutersCriteria(WebsiteCriteria):
     def get_parser(self, url):
         return ReutersParser(url)
 
+class BBCCriteria(WebsiteCriteria):
+
+    def meet_website(self, url):
+        return 'bbc' in url
+
+    def get_parser(self, url):
+        return BBCParser(url)
+
+class DailyMail(WebsiteCriteria):
+    def meet_website(self, url):
+        return 'dailymail' in url
+
+    def get_parser(self, url):
+        return DailyMailParser(url)
+
+class WebMed(WebsiteCriteria):
+    def meet_website(self, url):
+        return 'webmd' in url
+
+    def get_parser(self, url):
+        return WebMedParser(url)
+
+class FoxNews(WebsiteCriteria):
+    def meet_website(self, url):
+        return 'fox' in url
+
+    def get_parser(self, url):
+        return FoxNewsParser(url)
+
+class Telegraph(WebsiteCriteria):
+    def meet_website(self, url):
+        return 'telegraph' in url
+
+    def get_parser(self, url):
+        return TelegraphParser(url)
+
 class CriteriaManager(object):
 
-    criteria = [YahooCriteria(), ReutersCriteria()]
+    criteria = [YahooCriteria(), ReutersCriteria(), BBCCriteria(), DailyMail(), WebMed(), FoxNews(), Telegraph()]
 
     @staticmethod
     def get_parser(url):

@@ -1,0 +1,56 @@
+http://feeds.reuters.com/~r/reuters/healthNews/~3/cfajM69myFo/story01.htm
+Superbug threat prompts West to revisit Soviet-era virus therapy
+
+LONDON
+Alarmed by rising resistance to antibiotics scientists and governments are taking a fresh look at bacteria-chomping viruses first isolated a century ago from the stools of patients recovering from dysentery.
+
+Bacteriophages, which attack bacteria but leave human cells unscathed, are still used in Russia, Georgia and Poland, but fell by the wayside in the West with the mass production of penicillin, the first antibiotic, in the 1940s.
+
+Now, faced with the rise of drug-resistant "superbugs" such as MRSA or multi-drug-resistant tuberculosis, and a World Health Organization warning that a "post-antibiotic era" is dawning,
+European and U.S. researchers and authorities are thinking again.
+
+The first major multicenter clinical trial of phage therapy, funded by the European Commission, will start treating French, Belgian and Swiss burns patients with infections in the next few days.
+
+And last month, the European Medicines Agency hosted its first workshop on bacteriophages to discuss how the technology should be regulated and used.
+
+"We need alternatives to the current armamentarium of antibiotics and we want to see more development activity in this area," Marco Cavaleri, the agency's head of anti-infectives and vaccines, told Reuters.
+
+"In light of the increase in antimicrobial resistance and the lack of new antibiotics, it is important to open up the discussion."
+
+Across the Atlantic, the U.S. National Institute of Allergy and Infectious Diseases is also convening a conference on phage therapy this month, having identified it in 2014 as one of seven key areas in the fight against antibiotic resistance.
+
+NEVER FULLY TESTED
+
+It's not that the West has completely ignored the potential of phages until now.
+
+In the 1930s, drug makers including Eli Lilly and E.R. Squibb made therapeutic phage preparations, and a phage product from Dutch firm Micreos has been used in Europe and the United States since 2006 to prevent listeria in food.
+
+But phage therapy has never been tested in the clinic to the rigorous standards of Western medicine, as doctors have opted for tried and tested antibiotics.
+
+Soviet doctors, by contrast, were deprived of access to early Western antibiotics and turned to phage therapy for everything from gastrointestinal infections to battlefield wounds.
+
+Today, Russia's Microgen remains a leading supplier of bacteriophages, while the Eliava Institute in Tbilisi, Georgia, has been a center of phage expertise since 1923 and EU member state Poland still offers phage therapy, albeit for "compassionate use" only, because it lacks EU approval.
+
+Phages kill bacteria by getting into bacterial cells and replicating - but the lack of hard data means their effectiveness and safety as a treatment is unclear.
+
+The new 220-patient clinical trial known as Phagoburn, which has 3.8 million euros ($4.2 million) of EU funding, aims to close that knowledge gap - although Cavaleri believes it will still be at least five years before any product meeting stringent Western drug standards is ready for approval.
+
+Jerome Gabard, chief executive of French biotech firm Pherecydes Pharma, which makes the phage cocktail used in the Phagoburn trial, hopes he might get a conditional green light before that, but acknowledges Western doctors will be wary.
+
+"This will probably be a last-resort treatment, after three or four lines of antibiotics have been tried," he said. "It will be for fighting multi-drug resistant strains that are not cured by antibiotics."
+
+NICHE MARKET?
+
+That points to a niche market and Gabard says his company's phage therapy will probably cost between 2,000 and 7,000 euros per treatment.
+
+There are plenty of hurdles ahead, including a need to quell public concerns about using live viruses, even if they are harmless to mammalian cells.
+
+Regulators will also have to work out how to oversee a therapy that consists of a combination of multiple wild phage strains that will change over time. It may be that phage therapy is treated in a similar way to seasonal flu vaccines, which are adapted each year as flu evolves.
+
+So far, only a few biotech companies are investing in the field, with Pherecydes' rivals including U.S. firms AmpliPhi Biosciences and Intralytix, Britain's Novolytics, Portugal's Technophage and China's Phagelux.
+
+Large drug makers have so far remained on the sidelines, partly because of uncertainty about the ability to patent a technology that uses naturally occurring viruses and is nearly a century old.
+
+Mark Fishman, head of research at Novartis, for example, told Reuters the Swiss drug maker was not currently looking at phage therapy since it still saw considerable potential for developing new antibiotics.
+
+French critical care doctor Patrick Jault, one of the coordinators of the Phagoburn study, believes all options should be explored - but whatever the results of the current clinical trial, further studies will be necessary. "This is just the start," he said.

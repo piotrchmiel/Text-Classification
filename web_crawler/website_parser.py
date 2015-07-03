@@ -7,23 +7,24 @@ from urllib.request import urlopen
 
 def get_html_content(url):
     try:
-        webpage = urlopen(url)
+        webpage = urlopen(url, timeout=60)
     except:
         print("Connection error " + url)
         return ""
     else:
-        return webpage.read().decode('utf8')
+        try:
+            return webpage.read().decode(encoding='UTF-8', errors="replace")
+        except:
+            return ""
 
-class DefaultParser(object):
-    def __str__(self):
-        return "Yahoo Parser"
 
-    def __init__(self, url):
-        self.url = url
-        self.soup = BeautifulSoup(get_html_content(self.url))
+class IParser(object):
 
     def get_title(self):
-        return self.soup.title.string
+        if self.soup.title is not None:
+            return self.soup.title.string
+        else:
+            return None
 
     def get_related_articles(self):
         return []
@@ -35,6 +36,25 @@ class DefaultParser(object):
         else:
             return None
 
+class DefaultParser(IParser):
+    def __str__(self):
+        return "Default Parser"
+
+    def __init__(self, url):
+        self.url = url
+        self.soup = BeautifulSoup(get_html_content(self.url))
+
+class DefaultSeleniumParser(IParser):
+    def __str__(self):
+        return "DefaultSeleniumParser"
+
+    def __init__(self, url):
+        self.url=url
+        self.browser = webdriver.Firefox()
+        self.browser.get(self.url)
+        html_source = self.browser.page_source
+        self.browser.close()
+
 
 class YahooParser(DefaultParser):
     def __str__(self):
@@ -44,7 +64,11 @@ class YahooParser(DefaultParser):
         super().__init__(url)
 
     def get_title(self):
-        return sub("- Yahoo.+","",self.soup.title.string).strip()
+        header = self.soup.title
+        if self.soup.title is not None:
+            return sub("- Yahoo.+", "", header.string).strip()
+        else:
+            return None
 
     def get_article(self):
         article_body = self.soup.find("div", class_="body")
@@ -81,7 +105,11 @@ class ReutersParser(DefaultParser):
         super().__init__(url)
 
     def get_title(self):
-        return self.soup.find("h1", class_="article-headline").getText()
+        header = self.soup.find("h1", class_="article-headline")
+        if header is not None:
+            return header.getText()
+        else:
+            return None
 
     def get_article(self):
         article_body = self.soup.find("span", id="articleText")
@@ -89,6 +117,114 @@ class ReutersParser(DefaultParser):
             subparagraphs_tags = article_body.find_all("p")
             if subparagraphs_tags:
                 return "\n".join([paragraph_tag.getText().strip() for paragraph_tag in subparagraphs_tags])
+            else:
+                return None
+        else:
+            return None
+
+class BBCParser(DefaultParser):
+
+    def __str__(self):
+        return "BBCParser"
+
+    def __init__(self, url):
+        super().__init__(url)
+
+    def get_article(self):
+
+        if "sport" in self.url:
+            article_body = self.soup.find("div", class_="article")
+        else:
+            article_body = self.soup.find("div", class_="story-body")
+
+        if article_body is not None:
+            subparagraphs_tags = article_body.find_all("p")
+            if subparagraphs_tags:
+                return "\n".join([paragraph_tag.getText().strip() for paragraph_tag in subparagraphs_tags if not "Media playback is unsupported on your device" in paragraph_tag.getText()])
+            else:
+                return None
+        else:
+            return None
+
+
+class DailyMailParser(DefaultParser):
+
+    def __str__(self):
+        return "DailyMailParser"
+
+    def __init__(self, url):
+        super().__init__(url)
+
+    def get_article(self):
+
+        article_body = self.soup.find("div", class_="article-text")
+
+        if article_body is not None:
+            subparagraphs_tags = article_body.find_all("p", class_="mol-para-with-font")
+            if subparagraphs_tags:
+                return "\n".join([paragraph_tag.getText().strip() for paragraph_tag in subparagraphs_tags])
+            else:
+                return None
+        else:
+            return None
+
+
+class WebMedParser(DefaultSeleniumParser):
+
+    def __str__(self):
+        return "WebMedParser"
+
+    def __init__(self, url):
+        super().__init__(url)
+
+    def get_article(self):
+        article_body = self.soup.find("div", id="textArea")
+
+        if article_body is not None:
+            subparagraphs_tags = article_body.find_all("p", class_="node")
+            if subparagraphs_tags:
+                return "\n".join([paragraph_tag.getText().strip() for paragraph_tag in subparagraphs_tags])
+            else:
+                return None
+        else:
+            return None
+
+
+class FoxNewsParser(DefaultSeleniumParser):
+
+    def __str__(self):
+        return "FoxNewsParser"
+
+    def __init__(self, url):
+        super().__init__(url)
+
+    def get_article(self):
+        article_body = self.soup.find("article")
+
+        if article_body is not None:
+            subparagraphs_tags = article_body.find_all("p")
+            if subparagraphs_tags:
+                return "\n".join([paragraph_tag.getText().strip() for paragraph_tag in subparagraphs_tags])
+            else:
+                return None
+        else:
+            return None
+
+class TelegraphParser(DefaultParser):
+
+    def __str__(self):
+        return "TelegraphParser"
+
+    def __init__(self, url):
+        super().__init__(url)
+
+    def get_article(self):
+        article_body = self.soup.find("div", class_="story")
+
+        if article_body is not None:
+            subparagraphs_tags = article_body.find_all("p")
+            if subparagraphs_tags:
+                return "\n".join([paragraph_tag.getText().strip() for paragraph_tag in subparagraphs_tags if "embedPlayer" not in paragraph_tag.getText()])
             else:
                 return None
         else:
