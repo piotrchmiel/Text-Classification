@@ -14,9 +14,9 @@ POLITICS http://feeds.reuters.com/Reuters/PoliticsNews
 POLITICS http://news.yahoo.com/rss/politics
 POLITICS http://feeds.foxnews.com/foxnews/politics
 POLITICS http://www.telegraph.co.uk/news/politics/rss
+HEALTH http://rssfeeds.webmd.com/rss/rss.aspx?RSSSource=RSS_PUBLIC
 HEALTH http://news.yahoo.com/rss/health
 HEALTH http://feeds.bbci.co.uk/news/health/rss.xml
 HEALTH http://feeds.reuters.com/reuters/healthNews
 HEALTH http://www.dailymail.co.uk/health/index.rss
-HEALTH http://rssfeeds.webmd.com/rss/rss.aspx?RSSSource=RSS_PUBLIC
 HEALTH http://feeds.foxnews.com/foxnews/health

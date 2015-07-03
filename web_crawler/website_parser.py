@@ -179,9 +179,16 @@ class WebMedParser(DefaultSeleniumParser):
 
     def get_article(self):
         article_body = self.soup.find("div", id="textArea")
+        article_content = self.soup.find("div", class_="textArea")
 
         if article_body is not None:
             subparagraphs_tags = article_body.find_all("p", class_="node")
+            if subparagraphs_tags:
+                return "\n".join([paragraph_tag.getText().strip() for paragraph_tag in subparagraphs_tags])
+            else:
+                return None
+        elif article_content is not None:
+            subparagraphs_tags = article_content.find_all("p")
             if subparagraphs_tags:
                 return "\n".join([paragraph_tag.getText().strip() for paragraph_tag in subparagraphs_tags])
             else:

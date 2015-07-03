@@ -21,28 +21,32 @@ def main():
             print(urls)
             for url in urls:
                 if url is not None:
-                    parser = CriteriaManager.get_parser(url)
-                    if parser is not None:
-                        print(url)
-                        article_title = parser.get_title()
-                        if article_title is not None:
-                            path = os.getcwd() + "/Articles/" + category + "/" + valid_filename(article_title) + ".txt"
-                            if not os.path.exists(path):
-                                article = parser.get_article()
-                                if article is not None:
-                                    article = article.encode("utf-8")
-                                    print(article_title.encode("utf-8"))
-                                    print(article)
-                                    with open(path, "w", encoding='utf-8') as fh:
-                                        fh.write(url + "\n")
-                                        fh.write(article_title + "\n\n")
-                                        fh.write(article.decode(encoding='UTF-8', errors="replace"))
+                    try:
+                        parser = CriteriaManager.get_parser(url)
+                    except:
+                        "Parser error"
+                    else:
+                        if parser is not None:
+                            print(url)
+                            article_title = parser.get_title()
+                            if article_title is not None:
+                                path = os.getcwd() + "/Articles/" + category + "/" + valid_filename(article_title) + ".txt"
+                                if not os.path.exists(path):
+                                    article = parser.get_article()
+                                    if article is not None:
+                                        article = article.encode("utf-8")
+                                        print(article_title.encode("utf-8"))
+                                        print(article)
+                                        with open(path, "w", encoding='utf-8') as fh:
+                                            fh.write(url + "\n")
+                                            fh.write(article_title + "\n\n")
+                                            fh.write(article.decode(encoding='UTF-8', errors="replace"))
+                                    else:
+                                        print("Article is None")
                                 else:
-                                    print("Article is None")
+                                    print("Path exists")
                             else:
-                                print("Path exists")
-                        else:
-                            print("Title is none")
+                                print("Title is none")
 
 def valid_filename(filename):
     valid_chars = '-_.() abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
