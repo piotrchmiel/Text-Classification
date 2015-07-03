@@ -31,7 +31,7 @@ def main():
                                 article = parser.get_article()
                                 if article is not None:
                                     article = article.encode("utf-8")
-                                    print(article_title)
+                                    print(article_title.encode("utf-8"))
                                     print(article)
                                     with open(path, "w", encoding='utf-8') as fh:
                                         fh.write(url + "\n")

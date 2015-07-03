@@ -54,7 +54,7 @@ class DefaultSeleniumParser(IParser):
         self.browser.get(self.url)
         html_source = self.browser.page_source
         self.browser.close()
-
+        self.soup = BeautifulSoup(html_source)
 
 class YahooParser(DefaultParser):
     def __str__(self):
