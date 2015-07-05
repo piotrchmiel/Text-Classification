@@ -25,7 +25,7 @@ def get_articles(rss_link, category):
             try:
                 parser = CriteriaManager.get_parser(url)
             except Exception as err:
-                print("Parser error\n" + err)
+                print("Parser error\n" + str(err))
             else:
                 if parser is not None:
                     print(url)

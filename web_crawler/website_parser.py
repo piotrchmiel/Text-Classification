@@ -9,7 +9,7 @@ def get_html_content(url):
     try:
         webpage = urlopen(url, timeout=60)
     except Exception as err:
-        print("Connection error " + url + "\n" + err)
+        print("Connection error " + str(url) + "\n" + str(err))
         return ""
     else:
         try:
