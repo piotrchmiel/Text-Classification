@@ -179,7 +179,7 @@ class WebMedParser(DefaultSeleniumParser):
 
     def get_article(self):
         article_body = self.soup.find("div", id="textArea")
-        article_content = self.soup.find("div", class_="textArea")
+        article_content = self.soup.find("div", class_="article-content")
 
         if article_body is not None:
             subparagraphs_tags = article_body.find_all("p", class_="node")
