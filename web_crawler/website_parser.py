@@ -8,8 +8,8 @@ from urllib.request import urlopen
 def get_html_content(url):
     try:
         webpage = urlopen(url, timeout=60)
-    except:
-        print("Connection error " + url)
+    except Exception as err:
+        print("Connection error " + url + "\n" + err)
         return ""
     else:
         try:
@@ -32,7 +32,8 @@ class IParser(object):
     def get_article(self):
         subparagraphs_tags = self.soup.find_all("p")
         if subparagraphs_tags:
-            return "\n".join([paragraph_tag.getText().strip() for paragraph_tag in subparagraphs_tags])
+            return "\n".join([paragraph_tag.getText().strip()
+                              for paragraph_tag in subparagraphs_tags])
         else:
             return None
 
@@ -49,7 +50,7 @@ class DefaultSeleniumParser(IParser):
         return "DefaultSeleniumParser"
 
     def __init__(self, url):
-        self.url=url
+        self.url = url
         self.browser = webdriver.Firefox()
         self.browser.get(self.url)
         html_source = self.browser.page_source
@@ -75,7 +76,8 @@ class YahooParser(DefaultParser):
         if article_body is not None:
             subparagraphs_tags = article_body.find_all("p")
             if subparagraphs_tags:
-                return "\n".join([paragraph_tag.getText().strip() for paragraph_tag in subparagraphs_tags])
+                return "\n".join([paragraph_tag.getText().strip()
+                                  for paragraph_tag in subparagraphs_tags])
             else:
                 return None
         else:
@@ -85,13 +87,14 @@ class YahooParser(DefaultParser):
 
         browser = webdriver.Firefox()
         browser.get(self.url)
-        html_source = self.browser.page_source
+        html_source = browser.page_source
         browser.close()
 
         related_article_soup = BeautifulSoup(html_source)
         section = related_article_soup.find("section", id="mediacontentrelatedstory")
         if section is not None:
-            return [self.url.split('/')[2] + tag['href'] for tag in section.findAll('a', href=True) if "http" not in tag]
+            return [self.url.split('/')[2] + tag['href']
+                    for tag in section.findAll('a', href=True) if "http" not in tag]
         else:
             return []
 
@@ -116,7 +119,8 @@ class ReutersParser(DefaultParser):
         if article_body is not None:
             subparagraphs_tags = article_body.find_all("p")
             if subparagraphs_tags:
-                return "\n".join([paragraph_tag.getText().strip() for paragraph_tag in subparagraphs_tags])
+                return "\n".join([paragraph_tag.getText().strip()
+                                  for paragraph_tag in subparagraphs_tags])
             else:
                 return None
         else:
@@ -140,7 +144,10 @@ class BBCParser(DefaultParser):
         if article_body is not None:
             subparagraphs_tags = article_body.find_all("p")
             if subparagraphs_tags:
-                return "\n".join([paragraph_tag.getText().strip() for paragraph_tag in subparagraphs_tags if not "Media playback is unsupported on your device" in paragraph_tag.getText()])
+                return "\n".join([paragraph_tag.getText().strip()
+                                  for paragraph_tag in subparagraphs_tags
+                                  if not "Media playback is unsupported on your device"
+                                  in paragraph_tag.getText()])
             else:
                 return None
         else:
@@ -162,7 +169,8 @@ class DailyMailParser(DefaultParser):
         if article_body is not None:
             subparagraphs_tags = article_body.find_all("p", class_="mol-para-with-font")
             if subparagraphs_tags:
-                return "\n".join([paragraph_tag.getText().strip() for paragraph_tag in subparagraphs_tags])
+                return "\n".join([paragraph_tag.getText().strip()
+                                  for paragraph_tag in subparagraphs_tags])
             else:
                 return None
         else:
@@ -184,13 +192,15 @@ class WebMedParser(DefaultSeleniumParser):
         if article_body is not None:
             subparagraphs_tags = article_body.find_all("p", class_="node")
             if subparagraphs_tags:
-                return "\n".join([paragraph_tag.getText().strip() for paragraph_tag in subparagraphs_tags])
+                return "\n".join([paragraph_tag.getText().strip()
+                                  for paragraph_tag in subparagraphs_tags])
             else:
                 return None
         elif article_content is not None:
             subparagraphs_tags = article_content.find_all("p")
             if subparagraphs_tags:
-                return "\n".join([paragraph_tag.getText().strip() for paragraph_tag in subparagraphs_tags])
+                return "\n".join([paragraph_tag.getText().strip()
+                                  for paragraph_tag in subparagraphs_tags])
             else:
                 return None
         else:
@@ -211,7 +221,8 @@ class FoxNewsParser(DefaultSeleniumParser):
         if article_body is not None:
             subparagraphs_tags = article_body.find_all("p")
             if subparagraphs_tags:
-                return "\n".join([paragraph_tag.getText().strip() for paragraph_tag in subparagraphs_tags])
+                return "\n".join([paragraph_tag.getText().strip()
+                                  for paragraph_tag in subparagraphs_tags])
             else:
                 return None
         else:
@@ -231,7 +242,9 @@ class TelegraphParser(DefaultParser):
         if article_body is not None:
             subparagraphs_tags = article_body.find_all("p")
             if subparagraphs_tags:
-                return "\n".join([paragraph_tag.getText().strip() for paragraph_tag in subparagraphs_tags if "embedPlayer" not in paragraph_tag.getText()])
+                return "\n".join([paragraph_tag.getText().strip()
+                                  for paragraph_tag in subparagraphs_tags
+                                  if "embedPlayer" not in paragraph_tag.getText()])
             else:
                 return None
         else:

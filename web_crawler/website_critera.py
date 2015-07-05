@@ -1,6 +1,8 @@
 __author__ = 'Piotr Chmiel'
 
-from web_crawler.website_parser import *
+from web_crawler.website_parser import YahooParser, ReutersParser, BBCParser, \
+                                       DailyMailParser, WebMedParser, FoxNewsParser, \
+                                       TelegraphParser, DefaultParser
 from urllib.parse import unquote
 
 class WebsiteCriteria(object):

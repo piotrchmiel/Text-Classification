@@ -11,10 +11,11 @@ def valid_filename(filename):
     return ''.join(c for c in filename if c in valid_chars)
 
 def create_file(path, url, article_title, article):
-    with open(path, "w", encoding='utf-8') as fh:
-                                    fh.write(url + "\n")
-                                    fh.write(article_title + "\n\n")
-                                    fh.write(article.decode(encoding='UTF-8', errors="replace"))
+    with open(path, "w", encoding='utf-8') as file_handler:
+        file_handler.write(url + "\n")
+        file_handler.write(article_title + "\n\n")
+        file_handler.write(article.decode(encoding='UTF-8', errors="replace"))
+
 def get_articles(rss_link, category):
     feed_provider = FeedProvider(rss_link)
     urls = feed_provider.get_article_urls()
@@ -23,14 +24,15 @@ def get_articles(rss_link, category):
         if url is not None:
             try:
                 parser = CriteriaManager.get_parser(url)
-            except:
-                "Parser error"
+            except Exception as err:
+                print("Parser error\n" + err)
             else:
                 if parser is not None:
                     print(url)
                     article_title = parser.get_title()
                     if article_title is not None:
-                        path = os.getcwd() + "/Articles/" + category + "/" + valid_filename(article_title) + ".txt"
+                        path = os.getcwd() + "/Articles/" + category + \
+                               "/" + valid_filename(article_title) + ".txt"
                         if not os.path.exists(path):
                             article = parser.get_article()
                             if article is not None:
@@ -44,6 +46,8 @@ def get_articles(rss_link, category):
                             print("Path exists")
                     else:
                         print("Title is none")
+                else:
+                    print("Parser is none")
 
 def main():
     processes = []
