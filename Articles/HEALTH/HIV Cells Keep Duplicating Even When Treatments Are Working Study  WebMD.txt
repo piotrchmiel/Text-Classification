@@ -1,0 +1,16 @@
+http://www.webmd.com/hiv-aids/news/20150806/hiv-cells-keep-duplicating-even-when-treatments-are-working-study?src=RSS_PUBLIC
+HIV Cells Keep Duplicating Even When Treatments Are Working: Study – WebMD
+
+
+By Robert Preidt
+HealthDay Reporter
+
+THURSDAY, Aug. 6, 2015 (HealthDay News) -- HIV can continue to multiply in patients who are responding well to antiretroviral therapy, U.K. researchers say.
+Treatment advances over the last 30 years mean that HIV -- the virus that causes AIDS -- is suppressed to almost undetectable levels in many patients, and they can live a long and healthy life. It was believed that after many years of successful therapy, a patient's body would naturally rid itself of HIV.
+"This research shows that sadly, the HIV virus has found yet another way to escape our treatments," study leader Anna Maria Geretti, a professor from the University of Liverpool in the United Kingdom, said in a university news release.
+During treatment, the virus tries to avoid destruction by hiding in blood cells that trigger an immune response. HIV does this by integrating its own genetic information into the DNA of immune system cells called CD4 cells, the investigators explained.
+The researchers checked levels of integrated HIV in the CD4 cells of patients who had been receiving antiretroviral therapy for between one to 14 years, and found that the levels were the same in all of the patients.
+The results indicate that whenever an HIV-tainted CD4 cell copies itself to produce more cells, it also copies the HIV genes, the researchers said.
+Findings from the study were published Aug. 4 in the journal EBioMedicine.
+"We always knew HIV is difficult to suppress completely and that it hides inside CD4 cells, but we always hoped that as the body gradually renews its CD4 cells that the hidden HIV would die out. We were surprised to find that the levels of HIV integrated in the CD4 cells didn't reduce over the 14-year period," Geretti said.
+"The good news is that we did not see any worsening over time, but the bad news is that these findings really cast doubt over whether HIV can be 'cured' by increasing immune cell responses against it -- a strategy that now looks like it will eventually fail," Geretti concluded.

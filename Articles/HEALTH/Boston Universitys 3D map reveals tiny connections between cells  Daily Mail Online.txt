@@ -1,0 +1,34 @@
+http://www.dailymail.co.uk/sciencetech/article-3185438/Take-journey-inside-brain-Stunning-3D-map-reveals-tiny-connections-cells-unprecedented-detail.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490
+Boston University's 3D map reveals tiny connections between cells | Daily Mail Online
+
+Scientists have created a stunning 3D map of the brain, showing individual nerve cells in unprecedented detail.
+The map was created from a series of images taken with high resolution, allowing features to be seen in nanoscale, or at millionths of a millimetre.
+Researchers hope the map could be used to identify unusual connections between brain cells that could shed light on disorders such as bipolar and depression.
+Scroll down for video
+Narayanan Kasthuri and colleague Jeff Lichtman built a system that automatically slices a brain into thousands of thin sections.
+The team stain the slices to pick out different tissues, before an electron microscope takes a pictures of each slice.
+A computer then assigns different colours to individual structures and knits the images together to produce a 3D map.
+The patented hardware is called ATUM, which stands for automated tape collecting ultra-microtome.
+The cost and data storage demands for this research are still high, but the researchers expect expenses to drop over time, just as it has for genome sequencing.
+'The complexity of the brain is much more than what we had ever imagined,' said study first author Narayanan Kasthuri, a Boston University School of Medicine assistant professor.
+'We had this clean idea of how there's a really nice order to how neurons connect with each other, but if you actually look at the material it's not like that.'
+The work overturns a longstanding assumption, known as 'Peter's Rule,' that if two neurons are close to each other, they are likely to form synapses that allow them to communicate.
+It seems logical, but, Kasthuri learned, it turns out to be false, at least in this particular part of mouse brain, a piece of cortex that receives sensory information from whiskers.
+'Just because two neurons spend a lot of time together doesn't mean they make a connection,' says Kasthuri.
+'Now, that's the rule for this part of the brain in an adult mammal.
+'It could be that in different parts of the brain, or in a baby's brain, every neuron is connecting to its neighbours.
+'That's why we want to do this imaging in other brains and in a baby's brain - that's how we'll figure this out.'
+Traditional brain imaging techniques, including MRI, are can only resolve features down to about a millimetre.
+The latest imaging system contains both hardware, which slices and photographs brain samples, and software that analyses the data.
+The patented hardware, developed by Kasthuri and scientists at Harvard, is called ATUM, which stands for automated tape collecting ultra-microtome.
+It uses a diamond knife to cut stained, plasticised samples of brain tissue into 30-nanomenter slices, then collects and photographs the samples with an electron microscope.
+The scientists used a program called VAST, developed by co-author Daniel Berger of Harvard and the Massachusetts Institute of Technology, to analyse the data, creating vivid colour images of neurons at the level of individual synapses.
+The cost and data storage demands for this research are still high, but the researchers expect expenses to drop over time, just as it has for genome sequencing.
+The inventors' long-term goal is to make the resource available to the scientific community in the form of a national brain observatory.
+Kasthuri compares it to the Human Genome Project, an undertaking that created new insights and technology, but also criticism.
+'Some scientists have a fundamental problem with this type of work because it's not hypothesis-driven,' says Kasthuri.
+'We want to collect a huge data set and then look for patterns. And we think it will pay off.'
+'I'm a strong believer in bottom up-science, which is a way of saying that I would prefer to generate a hypothesis from the data and test it,' says senior study author Jeff Lichtman, of Harvard University.
+'For people who are imagers, being able to see all of these details is wonderful and we're getting an opportunity to peer into something that has remained somewhat intractable for so long.
+'It's about time we did this, and it is what people should be doing about things we don't understand.'
+Details of the system, along with their analysis of a sliver of mouse cortex, were published in the July edition of the journal Cell.

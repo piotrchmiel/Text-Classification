@@ -13,7 +13,7 @@ def get_html_content(url):
         return ""
     else:
         try:
-            return webpage.read().decode(encoding='UTF-8', errors="replace")
+            return webpage.read().decode(encoding='utf-8', errors="replace")
         except:
             return ""
 

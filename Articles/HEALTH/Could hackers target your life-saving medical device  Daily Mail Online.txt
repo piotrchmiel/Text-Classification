@@ -1,0 +1,26 @@
+http://www.dailymail.co.uk/health/article-3186110/Could-hackers-target-life-saving-medical-device-Criminals-tamper-pumps-deliver-drugs-patients-experts-warn.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490
+Could hackers target your life-saving medical device? | Daily Mail Online
+
+From infidelity website Ashley Madison to the US Pentagon, computer hackers have long gained entry to forbidden locations and access to unauthorised material.
+And now, experts warn they could even infiltrate the medical devices that keep patients alive.
+Last week, US hospitals were warned that a commonly-used pump which delivers medication to patients is vulnerable to hackers.
+The US Food and Drug Administration and Department of Homeland Security both issued advisories warning that Symbiq pumps, made by Hospira, contain security flaws.
+'This  could allow an unauthorised user to control the device and change the dosage the pump delivers, which could lead to over- or under-infusion of critical patient therapies,' the agency said in its warning.
+The pumps are computerised and continuously deliver drugs over long periods of time.
+They are used in hospitals, nursing homes and other medical facilities.
+The government agencies made it clear they do not know of any cases where such an attack has been launched, but advised healthcare providers to stop using this particular pump because of the risk.
+The news comes after a report by Wired last year found infusion pumps, defibrillators and CT scans were vulnerable to hacking.
+Drug infusion pumps can be hacked and remotely manipulated to change the dose doled out to patients, the report found.
+Hackers were also able to infiltrate Bluetooth-enabled defibrillators, devices which deliver shocks to a patient’s heart if they are at risk of a cardiac arrest, and manipulate them to shock randomly.
+They could also be changed to prevent a medically-needed shock from occurring.
+The two-year study was carried out in 2012 by Scott Erven, who works as head of information security for Essentia Health, which runs around 100 clinics, hospitals and pharmacies in Minnesota, North Dakota, Wisconsin and Idaho.
+Essentia allowed Mr Erven full access, and he was able to share some of the findings.
+He said many devices had common security flaws, including a lack of authentication to access or change the setting of the equipment, and devices often had default passwords like ‘admin’ or ‘1234’.
+They also found fridges that contain blood for transfusions, vaccines or that are used for cryogenics - the freezing of body parts at low temperatures - could be hacked and the temperatures changed.
+X-rays could be accessed by hackers logging on to the hospital’s network from outside.
+And digital medical records could be amended to cause doctors to misdiagnose, prescribe the wrong drugs or give treatment unnecessarily.
+In some cases, Mr Erven and his team were able to reboot devices to wipe out the configurations settings, allowing hackers to take essential equipment down during emergencies.
+Mr Erven told Wired journalists: 'Many hospitals are unaware of the high risk associated with these devices.
+'Even though research has been done to show the risks, health care organizations haven’t taken notice. They aren’t doing the testing they need to do and need to focus on assessing their risks.'
+However, he did find that anaesthesia equipment and ventilators, which help patient’s breathe, were generally not found on hospital networks.
+This means someone would have to have physical access to the devices to alter them.
