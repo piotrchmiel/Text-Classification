@@ -14,4 +14,8 @@ for root, dirs, files in os.walk("Articles"):
     print(text)
     text.collocations( )
     fh.close()
+    print(len(training.words()))
+    print(len(training.fileids()))
+    print(len(training.categories()))
+    print(training.words())
     break

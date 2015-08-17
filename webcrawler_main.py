@@ -10,9 +10,8 @@ def valid_filename(filename):
     valid_chars = '-_.() abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
     return ''.join(c for c in filename if c in valid_chars)
 
-def create_file(path, article_title, article):
+def create_file(path, article):
     with open(path, "w", encoding='utf-8') as file_handler:
-        file_handler.write(article_title + "\n\n")
         file_handler.write(article.decode(encoding='UTF-8', errors="replace"))
 
 def write_index(url, filename):
