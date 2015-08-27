@@ -1,17 +1,17 @@
-import pickle
+from pickle import dump
 
 from nltk.classify import apply_features, accuracy
 from nltk.classify.scikitlearn import SklearnClassifier
 from sklearn.naive_bayes import BernoulliNB
 from sklearn.svm import LinearSVC
-from text_processing.corpus import print_corpus_info, get_training_documents
-from feature_extractor.bag_of_words import binary_bag_of_words, counted_bag_of_words
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.pipeline import Pipeline
 
+from text_processing.corpus import print_corpus_info, get_training_documents
+from feature_extractor.bag_of_words import binary_bag_of_words, counted_bag_of_words
+
+
 def trainer(train_documents, test_documents, bag_of_words, classifier_object, type, name):
-    print (len(train_documents))
-    print (len(test_documents))
     print("Training {0} ...".format(name))
     train_set = apply_features(bag_of_words, train_documents)
     test_set = apply_features(bag_of_words, test_documents)
@@ -20,7 +20,7 @@ def trainer(train_documents, test_documents, bag_of_words, classifier_object, ty
     classifier.train(train_set)
 
     with open("Classificators/" + name + ".pickle", 'wb') as file_handler:
-        pickle.dump(classifier, file_handler)
+        dump(classifier, file_handler)
     print("Done")
     print("Accurancy {0}".format(accuracy(classifier, test_set)))
     print("Done")
