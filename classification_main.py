@@ -1,7 +1,7 @@
 from pickle import load
 from os import system, name
 from os.path import isfile, basename
-from feature_extractor.bag_of_words import bag_of_words
+from feature_extractor.bag_of_words import binary_bag_of_words
 from nltk import word_tokenize
 
 def load_classificator(name_pickle_file):
@@ -24,7 +24,7 @@ def menu():
 def main():
 
     print("Loading classificators ...")
-    naive_bayes_classificator = load_classificator("naive_bayes_classifier.pickle")
+    naive_bayes_classificator = load_classificator("Classificators/LinearSVC_bool.pickle")
     cls()
     while True:
         menu()
@@ -42,7 +42,7 @@ def main():
                 except Exception as e:
                     print ("File exception: ", e)
                 else:
-                    label = naive_bayes_classificator.classify(bag_of_words(word_tokenize(content)))
+                    label = naive_bayes_classificator.classify(binary_bag_of_words(word_tokenize(content)))
                     print("Text: {0} \nClassifier result: {1}\n".format(basename(path), label))
             else:
                 print ("There is no such file. Try again !")

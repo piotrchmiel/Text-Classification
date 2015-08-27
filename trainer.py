@@ -1,40 +1,44 @@
-from corpus import print_corpus_info, get_training_documents
-from feature_extractor.bag_of_words import bag_of_words
-from nltk.classify import apply_features, accuracy
-from nltk import NaiveBayesClassifier
-from sklearn.feature_extraction import DictVectorizer
-from sklearn.preprocessing import LabelEncoder
-from nltk import compat
-from progress.bar import Bar
 import pickle
 
-def main():
+from nltk.classify import apply_features, accuracy
+from nltk.classify.scikitlearn import SklearnClassifier
+from sklearn.naive_bayes import BernoulliNB
+from sklearn.svm import LinearSVC
+from text_processing.corpus import print_corpus_info, get_training_documents
+from feature_extractor.bag_of_words import binary_bag_of_words, counted_bag_of_words
+from sklearn.feature_extraction.text import TfidfTransformer
+from sklearn.pipeline import Pipeline
 
-    print_corpus_info()
-    print ("Extracting features: ")
-    train_documents, test_documents = get_training_documents(cut_off=0.75)
-
+def trainer(train_documents, test_documents, bag_of_words, classifier_object, type, name):
+    print (len(train_documents))
+    print (len(test_documents))
+    print("Training {0} ...".format(name))
     train_set = apply_features(bag_of_words, train_documents)
     test_set = apply_features(bag_of_words, test_documents)
-    """
-    _encoder = LabelEncoder()
-    _vectorizer = DictVectorizer(dtype=float, sparse=True)
-    X, y = list(compat.izip(*train_set))
 
-    X = _vectorizer.fit_transform(X)
-    y = _encoder.fit_transform(y)
+    classifier = SklearnClassifier(classifier_object, type)
+    classifier.train(train_set)
 
-    print (_vectorizer.get_feature_names()[:100])
-    print (len(X.toarray()))
-    print (list(_encoder.classes_))
-    """
-    classifier = NaiveBayesClassifier.train(train_set)
-    with open('naive_bayes_classifier.pickle', 'wb') as file_handler:
+    with open("Classificators/" + name + ".pickle", 'wb') as file_handler:
         pickle.dump(classifier, file_handler)
+    print("Done")
+    print("Accurancy {0}".format(accuracy(classifier, test_set)))
+    print("Done")
 
-    classifier.show_most_informative_features(10)
-    print(accuracy(classifier,test_set))
+def main():
+    print ("Welcome to trainer ! \n")
+    print_corpus_info()
 
+    train_documents, test_documents = get_training_documents(cut_off=0.75)
+
+    trainer(train_documents, test_documents, binary_bag_of_words, LinearSVC(), bool, "LinearSVC_bool")
+    trainer(train_documents, test_documents, counted_bag_of_words, LinearSVC(), int, "LinearSVC_int")
+    trainer(train_documents, test_documents, counted_bag_of_words, Pipeline([('tfidf', TfidfTransformer()),
+            ('lsc', LinearSVC())]), float, "LinearSVC_tfidf")
+    trainer(train_documents, test_documents, binary_bag_of_words, BernoulliNB(), bool, "BernoulliNB_bool")
+    trainer(train_documents, test_documents, counted_bag_of_words, BernoulliNB(), int, "BernoulliNB_int")
+    trainer(train_documents, test_documents, counted_bag_of_words, Pipeline([('tfidf', TfidfTransformer()),
+            ('nb', BernoulliNB())]), float, "BernoulliNB_tfidf")
 
 if __name__ == '__main__':
     main()
