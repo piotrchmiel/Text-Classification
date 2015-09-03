@@ -1,0 +1,26 @@
+One of the founders of a project to catalogue politicians' deleted tweets has hit back at Twitter for shutting down its accounts - even though he admits they were violating the network's rules.
+It was a blow to a project designed to scrutinise public servants. Twitter has put a halt to the functionality of 31 "Politwoops" accounts.  These were designed to highlight the behaviour of politicians who tried to delete things they'd posted on Twitter.
+It worked by using a clever bit of software to consistently scrape the messages of politicians and discover when they tried to delete tweets. The Politwoops software would then automatically retweet those messages for posterity - making the "delete" button into something like its opposite, at least for politicians.
+Twitter says the Politwoops accounts were violating its terms of use, and even being unfair to politicians.
+"The ability to delete one's Tweets - for whatever reason - has been a long-standing feature of Twitter for all users," the company said in a statement.
+"We take our commitment to our users seriously and will continue to defend and respect our users' voices in our product and platform."
+But Arjun El Fassad, director of the Open State Foundation which started the first "woops" site in the Netherlands, spoke to BBC Trending radio and believes Twitter acted rashly.
+"We make a real distinction between politicians and elected officials, and ordinary users," he said.
+"Although there is a delete button, when a politician does an interview with a journalist, afterwards they can't delete what they said... By deleting messages you're trying to hide things.
+"It's not a scandal to change your mind or your policy - but you should be open about it."
+Hear more about this story on the BBC World Service - you can stream our radio programme or download our podcast.
+El Fassad does admit that Politwoops violated Twitter's rules. But he says that there was an agreement with the company which had worked well for several years - and that they had no prior notice before their feeds were shut down.
+In its five-year history, Politwoops has made a few splashes in the political world. Dutch member of parliament Mark Verheijen resigned after an investigation raised concerns about his use of a government vehicle to attend a campaign event - a story that was in part uncovered due to a deleted tweet.
+And then there were the six American politicians who tweeted their effusive support for Bowe Berghdal, a soldier who was initially hailed as a hero when he was freed from the Taliban in Afghanistan - but who is currently facing court martial for desertion. The politicians deleted their tweets - but were found out by Politwoops.
+As Twitter has become increasingly popular, the number of real humans looking closely at politicians' tweets has increased.
+The ability of politicians to quickly delete a tweet and get away with it has shrunk dramatically, even without a Politwoops gathering up every message.
+In Britain, Labour MP Emily Thornberry's infamous "Image from Rochester" tweet, showing a house draped in English flags, was pounced upon within seconds.
+It was interpreted as a snobby and elitist jibe from a London politician, and eventually led to her resignation from the party's front bench. Even without Politwoops, it's hard to see how Thornberry could have deleted the photo without the rest of the world noticing (incidentally, the tweet in question is still online, as is Thornberry's apology.)
+Twitter may be a social platform and a political tool, but it is of course a business, and it's one that's losing money even as it grows revenue. El Fassad says social networking is so pervasive that there needs to be a universal set of standards that transcends commerce.
+"When Twitter started, they strongly communicated their goals about freedom of information and expression," he says.
+"Twitter has been under pressure from stock holders to start making profit, and I think there is change of mind. Twitter is becoming more informed by this trend, rather than being a service to connect people and promote freedom of information.
+"I think the public should know how politicians and governments change their minds and how things are disappearing from view."
+Blog by Mike Wendling
+Next story: Why has India blocked mobile internet messaging?
+India's Gujarat state has reportedly shut down mobile internet messaging on WhatsApp after deadly riots - but people there continued to swap messages online. READ MORE
+You can follow BBC Trending on Twitter @BBCtrending, and find us on Facebook.  All our stories are at bbc.com/trending.

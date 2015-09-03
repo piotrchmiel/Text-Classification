@@ -1,0 +1,11 @@
+Chaka Fattah, a Philadelphia congressman facing corruption charges, failed to persuade a federal appeals court to void a search warrant that would give investigators access to seven years of his private emails.
+The 3rd U.S. Circuit Court of Appeals on Wednesday dismissed Fattah's argument that executing the warrant to force Google Inc to turn over contents of his Gmail account dating back to 2008 would violate the U.S. Constitution's Speech or Debate Clause, which provides protections for members of Congress.
+Circuit Judge Julio Fuentes said the three-judge appeals court panel lacked jurisdiction because the warrant has yet to be executed.
+He also said Fattah, a Democrat in his 11th term, could not demonstrate that disclosing privileged emails, as opposed to using them as evidence, was unconstitutional.
+"Members could, in effect, shield themselves fully from criminal investigations by simply citing to the Speech or Debate Clause," Fuentes wrote. "We do not believe the Speech or Debate Clause was meant to effectuate such deception."
+The 3rd Circuit returned the case to U.S. District Judge Paul Diamond in Philadelphia to review Fattah's argument that the warrant was overbroad, and that emails should be filtered.
+Spokespeople for Fattah did not immediately respond to request for comment. Luther Weaver, a lawyer for Fattah, had no immediate comment.
+Patricia Hartman, a spokeswoman for U.S. Attorney Zane Memeger in Philadelphia, said that office is pleased with the decision.
+One of the panel judges dissented on a jurisdictional issue.
+Fattah was indicted on July 29 in connection with alleged bribery and misuse of federal, charitable and campaign funds. He pleaded not guilty on Aug. 18.
+The case is In re: Search of Electronic Communications (Both Sent And Received) in the Account of Chakafattah@gmail.com at Internet Service Provider Google Inc, 3rd U.S. Circuit Court of Appeals, No. 14-3752.

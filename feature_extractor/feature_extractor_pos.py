@@ -14,6 +14,7 @@ class FeatrueExtractorPos(object):
         self.binary = binary
         self.english_stopwords = set(stopwords.words('english'))
         self.collocations_finder = CollocationsFinder()
+        self.tv_set = ('fox', 'news', 'bbc', 'yahoo', 'telegraph', 'reuters')
 
     def extract_features(self):
         if self.binary:
@@ -83,6 +84,6 @@ class FeatrueExtractorPos(object):
 
         for (word, tag) in tagged_words:
             if any(tag.startswith(prefix) for prefix in ["NN", "VB", "JJ", "RB"]) and not self.is_one_sign(word) and \
-               not self.is_in_stopwords(word) and word.isalpha():
+               not self.is_in_stopwords(word) and word.isalpha() and word not in self.tv_set:
                 processed_word = self.stem_and_lemmatize(word,tag)
                 yield processed_word.lower()

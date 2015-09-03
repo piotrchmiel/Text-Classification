@@ -46,7 +46,7 @@ def get_articles(rss_link, category, lock):
                                 article = article.encode("utf-8")
                                 print(article_title.encode("utf-8"))
                                 print(article)
-                                create_file(path, article_title, article)
+                                create_file(path, article)
                                 lock.acquire()
                                 write_index(url, valid_filename(article_title) + ".txt")
                                 lock.release()
@@ -77,13 +77,15 @@ def main():
         if not os.path.isdir(os.getcwd() + "/Articles/" + category):
             os.mkdir("Articles/" + category)
         for rss_link in rss_link_by_category[category]:
-            processes.append(Process(target=get_articles, args=(rss_link, category, lock)))
-
+            #processes.append(Process(target=get_articles, args=(rss_link, category, lock)))
+            get_articles(rss_link,category,lock)
+    """
     for process in processes:
         process.start()
 
     for process in processes:
         process.join()
+    """
 
 if __name__ == '__main__':
     main()

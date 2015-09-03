@@ -1,0 +1,32 @@
+By 
+											David Barrett, Home Affairs Correspondent
+3:07PM BST 02 Sep 2015
+Comments
+Britain's most senior police officer has indicated a new determination to challenge Theresa May, the Home Secretary, over police budget cuts and warned: "The time has come to fight our corner."
+Sir Bernard Hogan-Howe, the Metropolitan Police Commissioner, posted a reply on an internal Scotland Yard bulletin board which signalled an increasingly frosty relationship with the Government.
+The comments emerged in a section of the Met's internal "intranet" site called "Ask the Commissioner", a copy of which has been obtained by The Telegraph.
+.tg-pullquote__global__group{zoom: 1;}.tg-pullquote__global__group:before, .tg-pullquote__global__group:after{content: ""; display: table;}.tg-pullquote__global__group:after{clear: both;}.tg-pullquote__inline{float:left;}.tg-pullquote__content{margin: 0 20px 10px 0px; font-size:18px; line-height:23px; font-family:georgia; width:260px; float:left;}.tg-pullquote__content--mobile{float: none; font-size: 18px; margin-left: 4.687%; margin-right: 4.687%; width: 90.626%;}.tg-pullquote__title{font-family:arial; font-weight:bold; font-size:16px; border-top:1px dotted #000000;}.tg-pullquote__quote{color:#007A8F; font-style:italic; margin-top:5px; margin-bottom:5px;}.tg-pullquote__attribution{color:#787878; margin-bottom:5px;}.tg-pullquote__source{}.tg-pullquote__source__link{color:#234B7B; outline:0; text-decoration:none;}.tg-pullquote__source__link:hover{border-bottom: 1px dotted #122842; color: #122842;}.tg-pullquote__share{float:right;}.tg-pullquote__share--icon{background-image:url("http://s.telegraph.co.uk/graphics/pullQuotes/assets/share_sprite.png"); background-image: url("http://s.telegraph.co.uk/graphics/pullQuotes/assets/share_sprite.svg"), none; width:26px; height:26px;}.tg-pullquote__shareLink{border-bottom:none;}.tg-pullquote__shareLink:hover{border-bottom:none !important;}.tg-pullquote__share--twitter{margin-right:5px;}.tg-pullquote__share--facebook{background-position: 26px 0;}
+"The time has come to fight our corner" 
+  
+
+    Sir Bernard Hogan-Howe 
+  
+
+(function(){var meta=document.getElementsByName('DCSext.Platform'); if( meta.length===0) return; if( meta[0].getAttribute('content') !=='mobile')return; var targets=document.querySelectorAll('.tg-pullquote__content'); var len=targets.length; while( len-- ){targets[ len].className +=' tg-pullquote__content--mobile';}})();document.getElementById('tg-pullquote144121431690065').innerHTML = '<div id="tg-pullquote__shareContainer" class="tg-pullquote__share tg-pullquote__global__group"><a class="tg-pullquote__inline tg-pullquote__shareLink" target="_blank" href="http://twitter.com/intent/tweet?text=%22The%20time%20has%20come%20to%20fight%20our%20corner%22&amp;url='+window.location.href+'?WT.mc_id=tmgoff_pq_tw_20150423"><div class="tg-pullquote__share--icon tg-pullquote__share--twitter"> </div></a><a class="tg-pullquote__inline tg-pullquote__shareLink" href="http://www.facebook.com/sharer.php?u='+window.location.href+'?WT.mc_id=tmgoff_pq_fb_20150423" target="_blank"><div class="tg-pullquote__share--icon tg-pullquote__share--facebook"> </div></a></div>';
+Sir Bernard agreed with an unnamed detective sergeant from east London who asked if he realised staff "struggle to cope" and are "virtually broken".
+"I agree. The time has come to fight our corner. Watch this space," the Commissioner wrote.
+The nature of Sir Bernard's plan to challenge the government over cuts remains unknown.
+Theresa May, the Home Secretary  Photo: GEOFF PUGH
+However, his willingness to adopt such an ebullient attitude in a forum which can be viewed by the Met's 47,000 officers and staff indicates the start of a new chapter.
+Sir Bernard, along with most other chief constables, has previously been stoical in the face of austerity measures which have seen budgets cut by a fifth in the last five years, reducing the number of officers in England and Wales by 17,000.
+The Met has been one of the few forces to retain its number of officers at pre-2010 levels.
+According to projections forces in England and Wales face further cuts of between 20 to 40 per cent by 2020.
+
+The full question posed by the detective sergeant from Newham said: "The message we constantly hear from the Commissioner and senior leaders is that despite budget cuts and everything else, we can cope and we will cope.
+"When will you listen to your staff and realise we struggle to cope, we are suffering, we are virtually 'broken' and we want you to tell government this."
+A Scotland Yard spokesman confirmed the bulletin board reply was by Sir Bernard, although he said the commissioner did not agree with the suggestion that the Met itself was "broken".
+The spokesman said: "Officer numbers in the capital have been rising and crime has been falling in recent years so by any measure the Met cannot be said to be 'broken' and the Commissioner was not agreeing with this part of the officer's statement.
+"However, he does recognise the increasing pressures officers and staff have to bear as the Met transforms its ways of working and learns to live within more restricted means.
+"The Commissioner made it clear in March this year that he felt the police service could respond to the expected reductions in funding without significant impact to public safety if, and only if, there was substantial structural and technological reform of the service along with collaborative working with other public services and an open debate about policing priorities.
+"The Commissioner's answer is making it clear he will continue to play an active part in the debate, which has intensified in recent weeks with the announcement of 25 per cent to 40 per cent cuts - which will, of course, have significant impact on policing."
+The head of the Met is the most senior officer in the country and has national responsibilities for counter-terrorism.
