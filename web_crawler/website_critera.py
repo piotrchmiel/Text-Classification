@@ -5,6 +5,7 @@ from web_crawler.website_parser import YahooParser, ReutersParser, BBCParser, \
                                        TelegraphParser, DefaultParser
 from urllib.parse import unquote
 
+
 class WebsiteCriteria(object):
 
     def meet_website(self, url):
@@ -15,6 +16,7 @@ class WebsiteCriteria(object):
 
     def format_url(self, url):
         return url
+
 
 class YahooCriteria(WebsiteCriteria):
 
@@ -30,6 +32,7 @@ class YahooCriteria(WebsiteCriteria):
         else:
             return url
 
+
 class ReutersCriteria(WebsiteCriteria):
 
     def meet_website(self, url):
@@ -37,6 +40,7 @@ class ReutersCriteria(WebsiteCriteria):
 
     def get_parser(self, url):
         return ReutersParser(url)
+
 
 class BBCCriteria(WebsiteCriteria):
 
@@ -46,12 +50,14 @@ class BBCCriteria(WebsiteCriteria):
     def get_parser(self, url):
         return BBCParser(url)
 
+
 class DailyMail(WebsiteCriteria):
     def meet_website(self, url):
         return 'dailymail' in url
 
     def get_parser(self, url):
         return DailyMailParser(url)
+
 
 class WebMed(WebsiteCriteria):
     def meet_website(self, url):
@@ -60,6 +66,7 @@ class WebMed(WebsiteCriteria):
     def get_parser(self, url):
         return WebMedParser(url)
 
+
 class FoxNews(WebsiteCriteria):
     def meet_website(self, url):
         return 'fox' in url
@@ -67,12 +74,14 @@ class FoxNews(WebsiteCriteria):
     def get_parser(self, url):
         return FoxNewsParser(url)
 
+
 class Telegraph(WebsiteCriteria):
     def meet_website(self, url):
         return 'telegraph' in url
 
     def get_parser(self, url):
         return TelegraphParser(url)
+
 
 class CriteriaManager(object):
 

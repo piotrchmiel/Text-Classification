@@ -1,8 +1,9 @@
 __author__ = 'Piotr Chmiel'
-
 from collections import defaultdict
 from feedparser import parse
+
 from web_crawler.website_critera import CriteriaManager
+
 
 class FeedProvider(object):
 

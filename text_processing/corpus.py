@@ -1,10 +1,13 @@
 __author__ = 'Piotr'
-from nltk.corpus.reader import CategorizedPlaintextCorpusReader
-from nltk import word_tokenize
 from random import shuffle
+
+from nltk import word_tokenize
+from nltk.corpus.reader import CategorizedPlaintextCorpusReader
+
 from text_processing.replacers import RegexpReplacer
 
 training = CategorizedPlaintextCorpusReader("Articles", r'.*\.txt',cat_pattern=r'(\w+)', encoding ="utf-8")
+
 
 def print_corpus_info():
     print ("Training Corpus INFO")
@@ -13,6 +16,7 @@ def print_corpus_info():
         print("Number of documents in {0:8} category: {1}".format(category, len(training.fileids(category))))
 
     print("\n")
+
 
 def get_training_documents(cut_off = 0.75):
     train_set = []
@@ -27,6 +31,7 @@ def get_training_documents(cut_off = 0.75):
         test_set.extend(category_set[cut_set:])
 
     return train_set, test_set
+
 
 def get_words(fileid, replacer):
 

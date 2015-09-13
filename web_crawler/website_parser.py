@@ -37,6 +37,7 @@ class IParser(object):
         else:
             return None
 
+
 class DefaultParser(IParser):
     def __str__(self):
         return "Default Parser"
@@ -44,6 +45,7 @@ class DefaultParser(IParser):
     def __init__(self, url):
         self.url = url
         self.soup = BeautifulSoup(get_html_content(self.url))
+
 
 class DefaultSeleniumParser(IParser):
     def __str__(self):
@@ -56,6 +58,7 @@ class DefaultSeleniumParser(IParser):
         html_source = self.browser.page_source
         self.browser.close()
         self.soup = BeautifulSoup(html_source)
+
 
 class YahooParser(DefaultParser):
     def __str__(self):
@@ -126,6 +129,7 @@ class ReutersParser(DefaultParser):
         else:
             return None
 
+
 class BBCParser(DefaultParser):
 
     def __str__(self):
@@ -152,6 +156,7 @@ class BBCParser(DefaultParser):
                 return None
         else:
             return None
+
 
 
 class DailyMailParser(DefaultParser):
@@ -227,6 +232,7 @@ class FoxNewsParser(DefaultSeleniumParser):
                 return None
         else:
             return None
+
 
 class TelegraphParser(DefaultParser):
 

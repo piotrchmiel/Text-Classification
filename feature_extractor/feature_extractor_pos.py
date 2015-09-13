@@ -3,6 +3,7 @@ from nltk.corpus import stopwords, wordnet
 from nltk.stem import PorterStemmer, WordNetLemmatizer
 from text_processing.collocations import CollocationsFinder
 
+
 class FeatrueExtractorPos(object):
 
     def __init__(self, words, tagger, binary=True):
@@ -85,5 +86,5 @@ class FeatrueExtractorPos(object):
         for (word, tag) in tagged_words:
             if any(tag.startswith(prefix) for prefix in ["NN", "VB", "JJ", "RB"]) and not self.is_one_sign(word) and \
                not self.is_in_stopwords(word) and word.isalpha() and word not in self.tv_set:
-                processed_word = self.stem_and_lemmatize(word,tag)
+                processed_word = self.stem_and_lemmatize(word, tag)
                 yield processed_word.lower()

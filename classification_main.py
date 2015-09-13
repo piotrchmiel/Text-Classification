@@ -1,8 +1,9 @@
 from pickle import load
 from os import system, name
 from os.path import isfile, basename
-from feature_extractor.bag_of_words import binary_bag_of_words, counted_bag_of_words
 from nltk import word_tokenize
+from feature_extractor.bag_of_words import binary_bag_of_words, counted_bag_of_words
+
 
 def load_classificator(name_pickle_file):
     with open(name_pickle_file, "rb") as file_handler:
@@ -10,8 +11,10 @@ def load_classificator(name_pickle_file):
 
     return classificator
 
+
 def cls():
     system('cls' if name=='nt' else 'clear')
+
 
 def menu():
     menu = "Menu\n\n" \
@@ -26,6 +29,7 @@ def menu():
 
     print(menu)
 
+
 def classify(path, classificator, bag_of_words_feature_extractor):
     try:
         with open(path, 'rt', encoding="utf-8") as file_handler:
@@ -35,6 +39,7 @@ def classify(path, classificator, bag_of_words_feature_extractor):
     else:
         label = classificator.classify(bag_of_words_feature_extractor(word_tokenize(content)))
         print("Text: {0} \nClassifier result: {1}\n".format(basename(path), label))
+
 
 def main():
 

@@ -1,18 +1,21 @@
 __author__ = 'Piotr Chmiel'
-
-from web_crawler.rss_provider import FeedProvider, get_source
-from web_crawler.website_critera import CriteriaManager
 from multiprocessing import Process, Lock
 from json import load, dump
 import os
+
+from web_crawler.rss_provider import FeedProvider, get_source
+from web_crawler.website_critera import CriteriaManager
+
 
 def valid_filename(filename):
     valid_chars = '-_.() abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
     return ''.join(c for c in filename if c in valid_chars)
 
+
 def create_file(path, article):
     with open(path, "w", encoding='utf-8') as file_handler:
         file_handler.write(article.decode(encoding='UTF-8', errors="replace"))
+
 
 def write_index(url, filename):
     with open("index.txt", encoding="utf-8") as index_fh:
@@ -22,6 +25,7 @@ def write_index(url, filename):
 
     with open("index.txt", "w", encoding="utf-8") as index_fh:
         dump(data, index_fh)
+
 
 def get_articles(rss_link, category, lock):
     feed_provider = FeedProvider(rss_link)
@@ -58,6 +62,7 @@ def get_articles(rss_link, category, lock):
                         print("Title is none")
                 else:
                     print("Parser is none")
+
 
 def main():
     processes = []

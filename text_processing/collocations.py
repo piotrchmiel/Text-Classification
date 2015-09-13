@@ -1,8 +1,9 @@
 __author__ = 'pchmiel'
 
 from nltk.collocations import BigramCollocationFinder, TrigramCollocationFinder
-from nltk.metrics import BigramAssocMeasures, TrigramAssocMeasures
 from nltk.corpus import stopwords
+from nltk.metrics import BigramAssocMeasures, TrigramAssocMeasures
+
 
 class CollocationsFinder(object):
 

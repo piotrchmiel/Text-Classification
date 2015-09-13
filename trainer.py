@@ -1,5 +1,6 @@
 from pickle import dump
 import os
+
 from nltk.classify import apply_features, accuracy
 from nltk.classify.scikitlearn import SklearnClassifier
 from sklearn.naive_bayes import BernoulliNB
@@ -24,6 +25,7 @@ def trainer(train_documents, test_documents, bag_of_words, classifier_object, ty
     print("Done")
     print("Accurancy {0}".format(accuracy(classifier, test_set)))
     print("Done")
+
 
 def main():
     print ("Welcome to trainer ! \n")

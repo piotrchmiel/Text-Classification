@@ -1,6 +1,6 @@
 __author__ = 'pchmiel'
-
 import re
+
 from nltk.corpus import wordnet
 
 replacement_patterns = {
@@ -14,6 +14,7 @@ replacement_patterns = {
     (r'(\w+)\'re', 'g<1> are'),
     (r'(\w+)\'d', 'g<1> would'),
 }
+
 
 class RegexpReplacer(object):
     def __init__(self, patterns=replacement_patterns):
