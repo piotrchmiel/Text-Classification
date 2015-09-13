@@ -1,5 +1,5 @@
 from pickle import dump
-
+import os
 from nltk.classify import apply_features, accuracy
 from nltk.classify.scikitlearn import SklearnClassifier
 from sklearn.naive_bayes import BernoulliNB
@@ -28,6 +28,8 @@ def trainer(train_documents, test_documents, bag_of_words, classifier_object, ty
 def main():
     print ("Welcome to trainer ! \n")
     print_corpus_info()
+    if not os.path.isdir(os.getcwd() + "/Classificators"):
+        os.mkdir("Classificators")
 
     train_documents, test_documents = get_training_documents(cut_off=0.75)
 

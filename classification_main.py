@@ -27,14 +27,14 @@ def menu():
     print(menu)
 
 def classify(path, classificator, bag_of_words_feature_extractor):
-        try:
-            with open(path, 'rt', encoding="utf-8") as file_handler:
-                content = file_handler.read()
-        except Exception as e:
-            print ("File exception: ", e)
-        else:
-            label = classificator.classify(bag_of_words_feature_extractor(word_tokenize(content)))
-            print("Text: {0} \nClassifier result: {1}\n".format(basename(path), label))
+    try:
+        with open(path, 'rt', encoding="utf-8") as file_handler:
+            content = file_handler.read()
+    except Exception as e:
+        print ("File exception: ", e)
+    else:
+        label = classificator.classify(bag_of_words_feature_extractor(word_tokenize(content)))
+        print("Text: {0} \nClassifier result: {1}\n".format(basename(path), label))
 
 def main():
 
