@@ -19,7 +19,7 @@ class FeatrueExtractorPos(object):
 
     def extract_features(self):
         if self.binary:
-            self.remove_duplicats()
+            self.filter_words_and_remove_duplicats()
             return self.binary_feature_set()
         else:
             return self.count_feature_set()
@@ -49,7 +49,7 @@ class FeatrueExtractorPos(object):
 
         return feature_set
 
-    def remove_duplicats(self):
+    def filter_words_and_remove_duplicats(self):
         self.bag_of_words = list(set(self.pos_generator()))
 
     def is_in_stopwords(self, word):

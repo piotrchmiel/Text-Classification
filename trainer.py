@@ -33,7 +33,7 @@ def main():
     if not os.path.isdir(os.getcwd() + "/Classificators"):
         os.mkdir("Classificators")
 
-    train_documents, test_documents = get_training_documents(cut_off=0.75)
+    train_documents, test_documents = get_training_documents(cut_off=0.75, save=True)
 
     trainer(train_documents, test_documents, binary_bag_of_words, LinearSVC(), bool, "LinearSVC_bool")
     trainer(train_documents, test_documents, counted_bag_of_words, LinearSVC(), int, "LinearSVC_int")
