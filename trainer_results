@@ -1,0 +1,32 @@
+Welcome to trainer !
+
+Training Corpus INFO
+Number of documents in HEALTH   category: 433
+Number of documents in POLITICS category: 357
+Number of documents in SPORT    category: 464
+
+
+Training LinearSVC_bool ...
+Done
+Accurancy 0.9682539682539683
+Done
+Training LinearSVC_int ...
+Done
+Accurancy 0.9555555555555556
+Done
+Training LinearSVC_tfidf ...
+Done
+Accurancy 0.9682539682539683
+Done
+Training BernoulliNB_bool ...
+Done
+Accurancy 0.8857142857142857
+Done
+Training BernoulliNB_int ...
+Done
+Accurancy 0.8857142857142857
+Done
+Training BernoulliNB_tfidf ...
+Done
+Accurancy 0.8857142857142857
+Done
