@@ -1,0 +1,243 @@
+Users/pchmiel/.virtualenvs/classify/bin/python /Users/pchmiel/Text-Classification/statistics.py
+Training Corpus INFO
+Number of documents in HEALTH   category: 433
+Number of documents in POLITICS category: 357
+Number of documents in SPORT    category: 464
+
+
+----------------- LinearSVC_bool -----------------
+         |       P     |
+         |       O     |
+         |   H   L     |
+         |   E   I   S |
+         |   A   T   P |
+         |   L   I   O |
+         |   T   C   R |
+         |   H   S   T |
+---------+-------------+
+  HEALTH |<102>  2   5 |
+POLITICS |   4 <85>  1 |
+   SPORT |   .   .<116>|
+---------+-------------+
+(row = reference; col = test)
+
+
+Accurancy:  0.9619047619047619
+Document HEALTH/Allergan gets DoJ subpoena over generic drug pricing.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Victims speak out after Colorado massacre trial ends in life.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/CA Governor Signs Tough Vaccination Bill Into Law.txt: Label: HEALTH => ResultPOLITICS
+Document HEALTH/John Smoltz the 1st HOFer following Tommy John surgery.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Living Wage could harm home care sector - BBC News.txt: Label: HEALTH => ResultPOLITICS
+Document HEALTH/Sanofi links with Evotec to tap stem cells for diabetes care.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Care in the UK The costs you face - BBC News.txt: Label: HEALTH => ResultSPORT
+Document POLITICS/Political editors across England - BBC News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/Republican debate Donald Trump is sexist and he doesnt care - Telegraph.txt: Label: POLITICS => ResultHEALTH
+Document POLITICS/Coal divestment bill passes California state legislature.txt: Label: POLITICS => ResultHEALTH
+Document POLITICS/Nearly 900000 veterans have pending health care requests watchdog says  Fox News.txt: Label: POLITICS => ResultHEALTH
+Document POLITICS/NHS lags behind other health systems - BBC News.txt: Label: POLITICS => ResultHEALTH
+----------------- LinearSVC_int -----------------
+         |       P     |
+         |       O     |
+         |   H   L     |
+         |   E   I   S |
+         |   A   T   P |
+         |   L   I   O |
+         |   T   C   R |
+         |   H   S   T |
+---------+-------------+
+  HEALTH | <99>  5   5 |
+POLITICS |   4 <82>  4 |
+   SPORT |   1   .<115>|
+---------+-------------+
+(row = reference; col = test)
+
+
+Accurancy:  0.9396825396825397
+Document HEALTH/Allergan gets DoJ subpoena over generic drug pricing.txt: Label: HEALTH => ResultPOLITICS
+Document HEALTH/CA Governor Signs Tough Vaccination Bill Into Law.txt: Label: HEALTH => ResultPOLITICS
+Document HEALTH/John Smoltz the 1st HOFer following Tommy John surgery.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Oregon marijuana fans look to cash in on new law.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Indian government failing to publish UN health report - BBC News.txt: Label: HEALTH => ResultPOLITICS
+Document HEALTH/Health conscious push for Scottish seaweed market - BBC News.txt: Label: HEALTH => ResultPOLITICS
+Document HEALTH/White House directs GMO regulators to update improve oversight.txt: Label: HEALTH => ResultPOLITICS
+Document HEALTH/Sanofi links with Evotec to tap stem cells for diabetes care.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Care in the UK The costs you face - BBC News.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Boom to start Tour despite low cortisol levels.txt: Label: HEALTH => ResultSPORT
+Document POLITICS/Political editors across England - BBC News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/Republican debate Donald Trump is sexist and he doesnt care - Telegraph.txt: Label: POLITICS => ResultHEALTH
+Document POLITICS/Watchdog Agency spends more than it makes to collect wrongful payments  Fox News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/Latest Clinton email release reportedly contains 57 threads with born classified information  Fox News.txt: Label: POLITICS => ResultHEALTH
+Document POLITICS/Nearly 900000 veterans have pending health care requests watchdog says  Fox News.txt: Label: POLITICS => ResultHEALTH
+Document POLITICS/Krauthammer Police in the United States are defenseless  Fox News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/NHS lags behind other health systems - BBC News.txt: Label: POLITICS => ResultHEALTH
+Document POLITICS/X Japan to play concert premiere film in London.txt: Label: POLITICS => ResultSPORT
+Document SPORT/Amir Khan Fasting during Ramadan a worthwhile sacrifice - BBC News.txt: Label: SPORT => ResultHEALTH
+----------------- LinearSVC_tfidf -----------------
+         |       P     |
+         |       O     |
+         |   H   L     |
+         |   E   I   S |
+         |   A   T   P |
+         |   L   I   O |
+         |   T   C   R |
+         |   H   S   T |
+---------+-------------+
+  HEALTH |<102>  5   2 |
+POLITICS |   3 <86>  1 |
+   SPORT |   .   .<116>|
+---------+-------------+
+(row = reference; col = test)
+
+
+Accurancy:  0.9650793650793651
+Document HEALTH/John Smoltz the 1st HOFer following Tommy John surgery.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Living Wage could harm home care sector - BBC News.txt: Label: HEALTH => ResultPOLITICS
+Document HEALTH/Oregon marijuana fans look to cash in on new law.txt: Label: HEALTH => ResultPOLITICS
+Document HEALTH/Indian government failing to publish UN health report - BBC News.txt: Label: HEALTH => ResultPOLITICS
+Document HEALTH/Health conscious push for Scottish seaweed market - BBC News.txt: Label: HEALTH => ResultPOLITICS
+Document HEALTH/White House directs GMO regulators to update improve oversight.txt: Label: HEALTH => ResultPOLITICS
+Document HEALTH/Boom to start Tour despite low cortisol levels.txt: Label: HEALTH => ResultSPORT
+Document POLITICS/Nearly 900000 veterans have pending health care requests watchdog says  Fox News.txt: Label: POLITICS => ResultHEALTH
+Document POLITICS/NHS lags behind other health systems - BBC News.txt: Label: POLITICS => ResultHEALTH
+Document POLITICS/Scotland to ban GM crop growing - BBC News.txt: Label: POLITICS => ResultHEALTH
+Document POLITICS/X Japan to play concert premiere film in London.txt: Label: POLITICS => ResultSPORT
+----------------- BernoulliNB_bool -----------------
+         |       P     |
+         |       O     |
+         |   H   L     |
+         |   E   I   S |
+         |   A   T   P |
+         |   L   I   O |
+         |   T   C   R |
+         |   H   S   T |
+---------+-------------+
+  HEALTH | <96>  3  10 |
+POLITICS |   2 <77> 11 |
+   SPORT |   1   1<114>|
+---------+-------------+
+(row = reference; col = test)
+
+
+Accurancy:  0.9111111111111111
+Document HEALTH/Allergan gets DoJ subpoena over generic drug pricing.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Tasting colours A garden design exploring synaesthesia - BBC News.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Victims speak out after Colorado massacre trial ends in life.txt: Label: HEALTH => ResultPOLITICS
+Document HEALTH/John Smoltz the 1st HOFer following Tommy John surgery.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Living Wage could harm home care sector - BBC News.txt: Label: HEALTH => ResultPOLITICS
+Document HEALTH/India New ways of treating children with deformed foot - BBC News.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Indian government failing to publish UN health report - BBC News.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Health conscious push for Scottish seaweed market - BBC News.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/White House directs GMO regulators to update improve oversight.txt: Label: HEALTH => ResultPOLITICS
+Document HEALTH/Colorado crash of medical transport helicopter kills pilot.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Care in the UK The costs you face - BBC News.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Boom to start Tour despite low cortisol levels.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/The struggle of being a parent with multiple sclerosis - BBC News.txt: Label: HEALTH => ResultSPORT
+Document POLITICS/Political editors across England - BBC News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/Labour leadership Andy Burnham car share - BBC News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/Watchdog Agency spends more than it makes to collect wrongful payments  Fox News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/Death toll in IS Yemen mosque attack rises to 32.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/US moving F-16s to Turkey  Fox News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/A woman should be made Labour leader says ex-MP Sian James - BBC News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/Democrat Schumer says he has decided to oppose Iran nuclear deal.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/Krauthammer Police in the United States are defenseless  Fox News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/Fox News hits ratings record with prime-time GOP debate  Fox News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/MPs urged to consider bombing IS targets in Syria - BBC News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/Schools demand money from parents - BBC News.txt: Label: POLITICS => ResultHEALTH
+Document POLITICS/NHS lags behind other health systems - BBC News.txt: Label: POLITICS => ResultHEALTH
+Document POLITICS/X Japan to play concert premiere film in London.txt: Label: POLITICS => ResultSPORT
+Document SPORT/North American soccer bodys General Secretary Sanz fired.txt: Label: SPORT => ResultPOLITICS
+Document SPORT/BBC Sport - Get Inspired AnyoneForTennis.txt: Label: SPORT => ResultHEALTH
+----------------- BernoulliNB_int -----------------
+         |       P     |
+         |       O     |
+         |   H   L     |
+         |   E   I   S |
+         |   A   T   P |
+         |   L   I   O |
+         |   T   C   R |
+         |   H   S   T |
+---------+-------------+
+  HEALTH | <96>  3  10 |
+POLITICS |   2 <77> 11 |
+   SPORT |   1   1<114>|
+---------+-------------+
+(row = reference; col = test)
+
+
+Accurancy:  0.9111111111111111
+Document HEALTH/Allergan gets DoJ subpoena over generic drug pricing.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Tasting colours A garden design exploring synaesthesia - BBC News.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Victims speak out after Colorado massacre trial ends in life.txt: Label: HEALTH => ResultPOLITICS
+Document HEALTH/John Smoltz the 1st HOFer following Tommy John surgery.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Living Wage could harm home care sector - BBC News.txt: Label: HEALTH => ResultPOLITICS
+Document HEALTH/India New ways of treating children with deformed foot - BBC News.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Indian government failing to publish UN health report - BBC News.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Health conscious push for Scottish seaweed market - BBC News.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/White House directs GMO regulators to update improve oversight.txt: Label: HEALTH => ResultPOLITICS
+Document HEALTH/Colorado crash of medical transport helicopter kills pilot.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Care in the UK The costs you face - BBC News.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Boom to start Tour despite low cortisol levels.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/The struggle of being a parent with multiple sclerosis - BBC News.txt: Label: HEALTH => ResultSPORT
+Document POLITICS/Political editors across England - BBC News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/Labour leadership Andy Burnham car share - BBC News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/Watchdog Agency spends more than it makes to collect wrongful payments  Fox News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/Death toll in IS Yemen mosque attack rises to 32.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/US moving F-16s to Turkey  Fox News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/A woman should be made Labour leader says ex-MP Sian James - BBC News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/Democrat Schumer says he has decided to oppose Iran nuclear deal.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/Krauthammer Police in the United States are defenseless  Fox News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/Fox News hits ratings record with prime-time GOP debate  Fox News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/MPs urged to consider bombing IS targets in Syria - BBC News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/Schools demand money from parents - BBC News.txt: Label: POLITICS => ResultHEALTH
+Document POLITICS/NHS lags behind other health systems - BBC News.txt: Label: POLITICS => ResultHEALTH
+Document POLITICS/X Japan to play concert premiere film in London.txt: Label: POLITICS => ResultSPORT
+Document SPORT/North American soccer bodys General Secretary Sanz fired.txt: Label: SPORT => ResultPOLITICS
+Document SPORT/BBC Sport - Get Inspired AnyoneForTennis.txt: Label: SPORT => ResultHEALTH
+----------------- BernoulliNB_tfidf -----------------
+         |       P     |
+         |       O     |
+         |   H   L     |
+         |   E   I   S |
+         |   A   T   P |
+         |   L   I   O |
+         |   T   C   R |
+         |   H   S   T |
+---------+-------------+
+  HEALTH | <96>  3  10 |
+POLITICS |   2 <77> 11 |
+   SPORT |   1   1<114>|
+---------+-------------+
+(row = reference; col = test)
+
+
+Accurancy:  0.9111111111111111
+Document HEALTH/Allergan gets DoJ subpoena over generic drug pricing.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Tasting colours A garden design exploring synaesthesia - BBC News.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Victims speak out after Colorado massacre trial ends in life.txt: Label: HEALTH => ResultPOLITICS
+Document HEALTH/John Smoltz the 1st HOFer following Tommy John surgery.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Living Wage could harm home care sector - BBC News.txt: Label: HEALTH => ResultPOLITICS
+Document HEALTH/India New ways of treating children with deformed foot - BBC News.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Indian government failing to publish UN health report - BBC News.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Health conscious push for Scottish seaweed market - BBC News.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/White House directs GMO regulators to update improve oversight.txt: Label: HEALTH => ResultPOLITICS
+Document HEALTH/Colorado crash of medical transport helicopter kills pilot.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Care in the UK The costs you face - BBC News.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/Boom to start Tour despite low cortisol levels.txt: Label: HEALTH => ResultSPORT
+Document HEALTH/The struggle of being a parent with multiple sclerosis - BBC News.txt: Label: HEALTH => ResultSPORT
+Document POLITICS/Political editors across England - BBC News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/Labour leadership Andy Burnham car share - BBC News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/Watchdog Agency spends more than it makes to collect wrongful payments  Fox News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/Death toll in IS Yemen mosque attack rises to 32.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/US moving F-16s to Turkey  Fox News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/A woman should be made Labour leader says ex-MP Sian James - BBC News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/Democrat Schumer says he has decided to oppose Iran nuclear deal.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/Krauthammer Police in the United States are defenseless  Fox News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/Fox News hits ratings record with prime-time GOP debate  Fox News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/MPs urged to consider bombing IS targets in Syria - BBC News.txt: Label: POLITICS => ResultSPORT
+Document POLITICS/Schools demand money from parents - BBC News.txt: Label: POLITICS => ResultHEALTH
+Document POLITICS/NHS lags behind other health systems - BBC News.txt: Label: POLITICS => ResultHEALTH
+Document POLITICS/X Japan to play concert premiere film in London.txt: Label: POLITICS => ResultSPORT
+Document SPORT/North American soccer bodys General Secretary Sanz fired.txt: Label: SPORT => ResultPOLITICS
+Document SPORT/BBC Sport - Get Inspired AnyoneForTennis.txt: Label: SPORT => ResultHEALTH
+
+Process finished with exit code 0

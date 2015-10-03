@@ -58,6 +58,12 @@ class FeatrueExtractorPos(object):
         else:
             return False
 
+    def is_in_tv_set(self, word):
+        if word.lower() in self.tv_set:
+            return True
+        else:
+            return False
+
     def is_one_sign(self, word):
         if len(word) == 1:
             return True
@@ -85,6 +91,6 @@ class FeatrueExtractorPos(object):
 
         for (word, tag) in tagged_words:
             if any(tag.startswith(prefix) for prefix in ["NN", "VB", "JJ", "RB"]) and not self.is_one_sign(word) and \
-               not self.is_in_stopwords(word) and word.isalpha() and word not in self.tv_set:
+               not self.is_in_stopwords(word) and word.isalpha() and not self.is_in_tv_set(word):
                 processed_word = self.stem_and_lemmatize(word, tag)
                 yield processed_word.lower()

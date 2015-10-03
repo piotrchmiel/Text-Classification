@@ -2,12 +2,40 @@ __author__ = 'pchmiel'
 import os
 from pickle import load
 
+from nltk import compat
 from nltk.classify import apply_features
 from nltk.metrics.confusionmatrix import ConfusionMatrix
 
 from classification_main import load_classificator
 from text_processing.corpus import print_corpus_info
-from feature_extractor.bag_of_words import binary_bag_of_words, counted_bag_of_words
+from feature_extractor.bag_of_words import *
+
+try:
+    from sklearn.feature_extraction import DictVectorizer
+except ImportError:
+    pass
+
+def matrix_dimension(feature_set):
+    vectorizer = DictVectorizer(dtype=float, sparse=True)
+    X, _ = list(compat.izip(*feature_set))
+    X = vectorizer.fit_transform(X)
+
+    return X.toarray().shape
+
+
+def vector_size():
+    train_feature_set = load_pickle("Classificators/train_feature_set.pickle")
+    print("Train set: " + str(len(train_feature_set)))
+
+    #print("All words " + str(matrix_dimension(apply_features(test_all_words, train_feature_set))))
+    #print("One sign " + str(matrix_dimension(apply_features(test_one_sign, train_feature_set))))
+    #print("Lower " + str(matrix_dimension(apply_features(test_lower, train_feature_set))))
+    #print("Alpha " + str(matrix_dimension(apply_features(test_alpha, train_feature_set))))
+    #print("Stopwords " + str(matrix_dimension(apply_features(test_stopwords, train_feature_set))))
+    #print("TV Set " + str(matrix_dimension(apply_features(test_tv_set, train_feature_set))))
+    print("POS " + str(matrix_dimension(apply_features(test_pos, train_feature_set))))
+    #print("STEM" + str(matrix_dimension(apply_features(test_stem, train_feature_set))))
+    #print(matrix_dimension(apply_features(binary_bag_of_words, train_feature_set)))
 
 
 def accurancy(test_feature_set, results):
@@ -21,7 +49,7 @@ def accurancy(test_feature_set, results):
 def incompability(labeled_documents, results):
     for ((document, label), result_label) in zip(labeled_documents, results):
         if label != result_label:
-            print("Document {0}: Label: {1} => Result{2}".format(document, label, result_label))
+            print("Document {0}: Label: {1} => Result: {2}".format(document, label, result_label))
 
 
 def statistics(classificator, bag_of_word, test_feature_set, test_documents):
@@ -46,6 +74,7 @@ def load_pickle(name_pickle_file):
 def main():
 
     print_corpus_info()
+    vector_size()
 
     classificators = (("LinearSVC_bool", binary_bag_of_words), ("LinearSVC_int", counted_bag_of_words),
                       ("LinearSVC_tfidf", counted_bag_of_words), ("BernoulliNB_bool", binary_bag_of_words),
