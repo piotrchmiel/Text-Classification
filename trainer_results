@@ -8,11 +8,11 @@ Number of documents in SPORT    category: 464
 
 Training LinearSVC_bool ...
 Done
-Accurancy 0.9619047619047619
+Accurancy 0.9555555555555556
 Done
 Training LinearSVC_int ...
 Done
-Accurancy 0.9396825396825397
+Accurancy 0.9682539682539683
 Done
 Training LinearSVC_tfidf ...
 Done
@@ -20,13 +20,12 @@ Accurancy 0.9650793650793651
 Done
 Training BernoulliNB_bool ...
 Done
-Accurancy 0.9111111111111111
+Accurancy 0.8634920634920635
 Done
 Training BernoulliNB_int ...
 Done
-Accurancy 0.9111111111111111
+Accurancy 0.8634920634920635
 Done
 Training BernoulliNB_tfidf ...
-Done
-Accurancy 0.9111111111111111
+Accurancy 0.8634920634920635
 Done

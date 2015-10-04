@@ -76,7 +76,8 @@ class TestExtractorPos(FeatrueExtractorPos):
         tagged_words = self.tagger.tag(self.words)
 
         for (word, tag) in tagged_words:
-            if any(tag.startswith(prefix) for prefix in ["NN", "VB", "JJ", "RB"]):
+            if any(tag.startswith(prefix) for prefix in ["NN", "VB", "JJ", "RB"]) and not self.is_one_sign(word) and \
+               not self.is_in_stopwords(word) and word.isalpha() and not self.is_in_tv_set(word):
                 yield word.lower()
 
 
