@@ -1,34 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74087aaf-952d-472d-982b-bda96505d419" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classifiers/BernoulliNB_bool.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classifiers/BernoulliNB_int.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classifiers/BernoulliNB_tfidf.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classifiers/LinearSVC_bool.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classifiers/LinearSVC_int.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classifiers/LinearSVC_tfidf.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classifiers/LogisticRegression_bool.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classifiers/LogisticRegression_int.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classifiers/LogisticRegression_tfidf.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classifiers/test_documents.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classifiers/test_feature_set.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classifiers/train_documents.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classifiers/train_feature_set.pickle" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Classificators/BernoulliNB_bool.pickle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Classificators/BernoulliNB_int.pickle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Classificators/BernoulliNB_tfidf.pickle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Classificators/LinearSVC_bool.pickle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Classificators/LinearSVC_int.pickle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Classificators/LinearSVC_tfidf.pickle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Classificators/test_documents.pickle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Classificators/test_feature_set.pickle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Classificators/train_documents.pickle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Classificators/train_feature_set.pickle" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classification_main.py" afterPath="$PROJECT_DIR$/classification_main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/text_processing/corpus.py" afterPath="$PROJECT_DIR$/text_processing/corpus.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics.py" afterPath="$PROJECT_DIR$/statistics.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics.txt" afterPath="$PROJECT_DIR$/statistics.txt" />
+    <list default="true" id="74087aaf-952d-472d-982b-bda96505d419" name="Default" comment="RefKTOR">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classifiers/LinearSVC_bool.pickle" afterPath="$PROJECT_DIR$/Classifiers/LinearSVC_bool.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classifiers/LinearSVC_int.pickle" afterPath="$PROJECT_DIR$/Classifiers/LinearSVC_int.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainer.py" afterPath="$PROJECT_DIR$/trainer.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -97,8 +72,8 @@
       <file leaf-file-name="statistics.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/statistics.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.862068">
-              <caret line="114" column="24" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
+            <state vertical-scroll-proportion="-44.482758">
+              <caret line="86" column="45" selection-start-line="86" selection-start-column="45" selection-end-line="86" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -117,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trainer.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="trainer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/trainer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.43825302">
+              <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -129,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="corpus.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="corpus.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/text_processing/corpus.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16666667">
-              <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -700,28 +675,34 @@
       <option name="project" value="LOCAL" />
       <updated>1443981711931</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="RefKTOR">
+      <created>1444682040506</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1444682040506</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="810" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25454545" sideWeight="0.50277776" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29682997" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.09577465" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30115274" sideWeight="0.49722221" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1702432" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1702432" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32853025" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29682997" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -772,7 +753,8 @@
     <MESSAGE value="Refaktor" />
     <MESSAGE value="Dodanie Satystyk" />
     <MESSAGE value="Statystyki dotyczace rozmiaru wektorow cech." />
-    <option name="LAST_COMMIT_MESSAGE" value="Statystyki dotyczace rozmiaru wektorow cech." />
+    <MESSAGE value="RefKTOR" />
+    <option name="LAST_COMMIT_MESSAGE" value="RefKTOR" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1068,14 +1050,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classifiers/LinearSVC_bool.pickle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/feature_extractor/feature_extractor_pos.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1098,17 +1072,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/statistics.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.862068">
-          <caret line="114" column="24" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/trainer_results">
@@ -1149,21 +1112,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trainer.py">
+    <entry file="file://$PROJECT_DIR$/text_processing/corpus.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
+          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/text_processing/corpus.py">
+    <entry file="file://$PROJECT_DIR$/Classifiers/LinearSVC_bool.pickle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16666667">
-          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statistics.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-44.482758">
+          <caret line="86" column="45" selection-start-line="86" selection-start-column="45" selection-end-line="86" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43825302">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
