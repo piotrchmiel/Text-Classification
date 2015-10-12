@@ -9,7 +9,7 @@ from nltk.classify import apply_features
 from nltk.metrics.confusionmatrix import ConfusionMatrix
 from nltk.metrics import precision, recall, f_measure
 
-from classification_main import load_classificator
+from classification_main import load_classifier
 from text_processing.corpus import print_corpus_info
 from feature_extractor.bag_of_words import *
 
@@ -27,7 +27,7 @@ def matrix_dimension(feature_set):
 
 
 def vector_size():
-    train_feature_set = load_pickle("Classificators/train_feature_set.pickle")
+    train_feature_set = load_pickle("Classifiers/train_feature_set.pickle")
     print("Train set: " + str(len(train_feature_set)))
 
     print("All words " + str(matrix_dimension(apply_features(test_all_words, train_feature_set))))
@@ -80,6 +80,7 @@ def precision_recall_f_measure(classifier, test_feats):
     print("\nF Measure")
     pprint(f_measures, width=1)
 
+
 def statistics(classifier, bag_of_word, test_feature_set, test_documents):
 
     test_set = apply_features(bag_of_word, test_feature_set)
@@ -102,23 +103,25 @@ def load_pickle(name_pickle_file):
 
 
 def main():
-
     print_corpus_info()
     vector_size()
 
-    classificators = (("LinearSVC_bool", binary_bag_of_words), ("LinearSVC_int", counted_bag_of_words),
-                      ("LinearSVC_tfidf", counted_bag_of_words), ("BernoulliNB_bool", binary_bag_of_words),
-                      ("BernoulliNB_int", counted_bag_of_words), ("BernoulliNB_tfidf", counted_bag_of_words))
+    test_feature_set = load_pickle("Classifiers/test_feature_set.pickle")
+    test_documents = load_pickle("Classifiers/test_documents.pickle")
 
-    test_feature_set = load_pickle("Classificators/test_feature_set.pickle")
-    test_documents = load_pickle("Classificators/test_documents.pickle")
+    for content in os.listdir("Classifiers"):
+        path = os.path.abspath(os.path.join('Classifiers', content))
+        if os.path.isfile(path) and any(suffix in content for suffix in ['_bool', '_int', '_tfidf']) and \
+           content[content.rfind('.'):] == ".pickle":
+            print("\n-----------------", content[:content.rfind('.')], "-----------------\n")
 
-    for name, bag_of_words in classificators:
-        print("-----------------", name, "-----------------")
+            classifier=load_classifier(path)
+            if "_bool" in content:
+                bag_of_words = binary_bag_of_words
+            else:
+                bag_of_words = counted_bag_of_words
 
-        classificator=load_classificator(os.path.join("Classificators", name + ".pickle"))
-
-        statistics(classificator, bag_of_words, test_feature_set, test_documents)
+            statistics(classifier, bag_of_words, test_feature_set, test_documents)
 
 
 if __name__ == '__main__':

@@ -14,6 +14,7 @@ TV Set (939, 26544)
 POS (939, 26497)
 STEM(939, 18968)
 (939, 18907)
+
 ----------------- LinearSVC_bool -----------------
          |       P     |
          |       O     |
@@ -32,6 +33,7 @@ POLITICS |   8 <82>  . |
 
 
 Accurancy:  0.9555555555555556
+
 Document HEALTH/White House directs GMO regulators to update improve oversight.txt: Label: HEALTH => Result: POLITICS
 Document HEALTH/Living Wage could harm home care sector - BBC News.txt: Label: HEALTH => Result: POLITICS
 Document HEALTH/Egypts Mursi complains about prison food requests medical exam - state media.txt: Label: HEALTH => Result: POLITICS
@@ -61,6 +63,7 @@ F Measure
 {'HEALTH': 0.9369369369369369,
  'POLITICS': 0.9265536723163841,
  'SPORT': 0.9956709956709957}
+
 ----------------- LinearSVC_int -----------------
          |       P     |
          |       O     |

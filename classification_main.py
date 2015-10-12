@@ -5,7 +5,7 @@ from nltk import word_tokenize
 from feature_extractor.bag_of_words import binary_bag_of_words, counted_bag_of_words
 
 
-def load_classificator(name_pickle_file):
+def load_classifier(name_pickle_file):
     with open(name_pickle_file, "rb") as file_handler:
         classificator = load(file_handler)
 
@@ -18,13 +18,13 @@ def cls():
 
 def menu():
     menu = "Menu\n\n" \
-           "Choose classificator: \n" \
-           "a) Naive Bayes Classificator Bool\n" \
-           "b) Naive Bayes Classificator Int\n" \
-           "c) Naive Bayes Classificator tfidf\n" \
-           "d) LinearSVC Classificator Bool\n" \
-           "e) LinearSVC Classificator Int\n" \
-           "f) LinearSVC Classificator tfidf\n" \
+           "Choose classifier: \n" \
+           "a) Naive Bayes Classifier Bool\n" \
+           "b) Naive Bayes Classifier Int\n" \
+           "c) Naive Bayes Classifier tfidf\n" \
+           "d) LinearSVC Classifier Bool\n" \
+           "e) LinearSVC Classifier Int\n" \
+           "f) LinearSVC Classifier tfidf\n" \
            "q) Quit\n"
 
     print(menu)
@@ -43,13 +43,13 @@ def classify(path, classificator, bag_of_words_feature_extractor):
 
 def main():
 
-    print("Loading classificators ...")
-    linear_svc_bool = load_classificator("Classificators/LinearSVC_bool.pickle")
-    linear_svc_int = load_classificator("Classificators/LinearSVC_int.pickle")
-    linear_svc_tfidf = load_classificator("Classificators/LinearSVC_tfidf.pickle")
-    bernulli_nb_bool = load_classificator("Classificators/BernoulliNB_bool.pickle")
-    bernulli_nb_int = load_classificator("Classificators/BernoulliNB_int.pickle")
-    bernulli_nb_tfidf = load_classificator("Classificators/BernoulliNB_tfidf.pickle")
+    print("Loading classifiers ...")
+    linear_svc_bool = load_classifier("Classifiers/LinearSVC_bool.pickle")
+    linear_svc_int = load_classifier("Classifiers/LinearSVC_int.pickle")
+    linear_svc_tfidf = load_classifier("Classifiers/LinearSVC_tfidf.pickle")
+    bernulli_nb_bool = load_classifier("Classifiers/BernoulliNB_bool.pickle")
+    bernulli_nb_int = load_classifier("Classifiers/BernoulliNB_int.pickle")
+    bernulli_nb_tfidf = load_classifier("Classifiers/BernoulliNB_tfidf.pickle")
     cls()
 
     while True:

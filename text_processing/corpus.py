@@ -21,7 +21,7 @@ def print_corpus_info():
 
 
 def save_documents(documents, name):
-     with open(os.path.join("Classificators", name + ".pickle"), 'wb') as file_handler:
+     with open(os.path.join("Classifiers", name + ".pickle"), 'wb') as file_handler:
         dump(documents, file_handler)
 
 
