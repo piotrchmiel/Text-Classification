@@ -6,6 +6,8 @@ from nltk.classify import apply_features, accuracy
 from nltk.classify.scikitlearn import SklearnClassifier
 from sklearn.naive_bayes import BernoulliNB
 from sklearn.svm import LinearSVC
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.neighbors import KNeighborsClassifier
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LogisticRegression
@@ -40,7 +42,7 @@ def main():
     train_documents = load_pickle("Classifiers/train_feature_set.pickle")
     test_documents = load_pickle("Classifiers/test_feature_set.pickle")
 
-    algorithms = [LinearSVC(), LogisticRegression(), BernoulliNB()]
+    algorithms = [DecisionTreeClassifier(), KNeighborsClassifier()]#LinearSVC(), LogisticRegression(), BernoulliNB()]
 
     for algorithm in algorithms:
         class_name = algorithm.__class__.__name__

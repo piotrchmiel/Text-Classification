@@ -5,7 +5,7 @@ from feature_extractor.feature_extractor_pos import FeatrueExtractorPos
 class TestExtractorAll(FeatrueExtractorPos):
 
     def __init__(self, words, tagger, binary=True):
-        super().__init__(words,tagger,binary)
+        super().__init__(words, tagger, binary)
 
     def filter_words_and_remove_duplicats(self):
         self.bag_of_words = list(set(self.words))
@@ -14,7 +14,7 @@ class TestExtractorAll(FeatrueExtractorPos):
 class TestExtractorOneSign(FeatrueExtractorPos):
 
     def __init__(self, words, tagger, binary=True):
-        super().__init__(words,tagger,binary)
+        super().__init__(words, tagger, binary)
 
     def pos_generator(self):
         for word in self.words:

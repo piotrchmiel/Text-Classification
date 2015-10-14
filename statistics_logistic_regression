@@ -1,0 +1,449 @@
+Training test_bool ...
+Done
+Accurancy 0.9619047619047619
+Done
+
+-----------------LogisticRegressiontest_all_words-----------------
+
+         |       P     |
+         |       O     |
+         |   H   L     |
+         |   E   I   S |
+         |   A   T   P |
+         |   L   I   O |
+         |   T   C   R |
+         |   H   S   T |
+---------+-------------+
+  HEALTH |<104>  3   2 |
+POLITICS |   2 <84>  4 |
+   SPORT |   .   1<115>|
+---------+-------------+
+(row = reference; col = test)
+
+
+Accurancy:  0.9619047619047619
+Document HEALTH/U.N. calls on Israel Palestinians to prosecute Gaza war crimes.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Cycling-Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Premature babies cared for in Newcastles RVI - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Care in the UK The costs you face - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document POLITICS/NHS lags behind other health systems - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Man arrested in connection with San Francisco killing had been deported several times officials say  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Video Jon Stewart signs off from The Daily Show - Telegraph.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/X Japan to play concert premiere film in London.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Wife of retired Supreme Court Justice Stevens dies  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Exam focus damaging pupils mental health says NUT - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document SPORT/BBC Sport - World Anti-Doping Agency to investigate athletics doping claims.txt: Label: SPORT => Result: POLITICS
+
+Precision:
+{'HEALTH': 0.9811320754716981,
+ 'POLITICS': 0.9545454545454546,
+ 'SPORT': 0.9504132231404959}
+
+Recall
+{'HEALTH': 0.9541284403669725,
+ 'POLITICS': 0.9333333333333333,
+ 'SPORT': 0.9913793103448276}
+
+F Measure
+{'HEALTH': 0.9674418604651162,
+ 'POLITICS': 0.9438202247191011,
+ 'SPORT': 0.970464135021097}
+Training test_bool ...
+Done
+Accurancy 0.9619047619047619
+Done
+
+-----------------LogisticRegressiontest_one_sign-----------------
+
+         |       P     |
+         |       O     |
+         |   H   L     |
+         |   E   I   S |
+         |   A   T   P |
+         |   L   I   O |
+         |   T   C   R |
+         |   H   S   T |
+---------+-------------+
+  HEALTH |<104>  3   2 |
+POLITICS |   2 <84>  4 |
+   SPORT |   .   1<115>|
+---------+-------------+
+(row = reference; col = test)
+
+
+Accurancy:  0.9619047619047619
+Document HEALTH/U.N. calls on Israel Palestinians to prosecute Gaza war crimes.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Cycling-Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Ice bucket challenge Whats happened since - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Care in the UK The costs you face - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document POLITICS/NHS lags behind other health systems - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Man arrested in connection with San Francisco killing had been deported several times officials say  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/US moving F-16s to Turkey  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/X Japan to play concert premiere film in London.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Wife of retired Supreme Court Justice Stevens dies  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Exam focus damaging pupils mental health says NUT - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document SPORT/BBC Sport - World Anti-Doping Agency to investigate athletics doping claims.txt: Label: SPORT => Result: POLITICS
+
+Precision:
+{'HEALTH': 0.9811320754716981,
+ 'POLITICS': 0.9545454545454546,
+ 'SPORT': 0.9504132231404959}
+
+Recall
+{'HEALTH': 0.9541284403669725,
+ 'POLITICS': 0.9333333333333333,
+ 'SPORT': 0.9913793103448276}
+
+F Measure
+{'HEALTH': 0.9674418604651162,
+ 'POLITICS': 0.9438202247191011,
+ 'SPORT': 0.970464135021097}
+Training test_bool ...
+Done
+Accurancy 0.9650793650793651
+Done
+
+-----------------LogisticRegressiontest_lower-----------------
+
+         |       P     |
+         |       O     |
+         |   H   L     |
+         |   E   I   S |
+         |   A   T   P |
+         |   L   I   O |
+         |   T   C   R |
+         |   H   S   T |
+---------+-------------+
+  HEALTH |<104>  2   3 |
+POLITICS |   2 <85>  3 |
+   SPORT |   .   1<115>|
+---------+-------------+
+(row = reference; col = test)
+
+
+Accurancy:  0.9650793650793651
+Document HEALTH/U.N. calls on Israel Palestinians to prosecute Gaza war crimes.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Cycling-Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Ice bucket challenge Whats happened since - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Care in the UK The costs you face - BBC News.txt: Label: HEALTH => Result: SPORT
+Document POLITICS/NHS lags behind other health systems - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Man arrested in connection with San Francisco killing had been deported several times officials say  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/X Japan to play concert premiere film in London.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Wife of retired Supreme Court Justice Stevens dies  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Exam focus damaging pupils mental health says NUT - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document SPORT/BBC Sport - World Anti-Doping Agency to investigate athletics doping claims.txt: Label: SPORT => Result: POLITICS
+
+Precision:
+{'HEALTH': 0.9811320754716981,
+ 'POLITICS': 0.9659090909090909,
+ 'SPORT': 0.9504132231404959}
+
+Recall
+{'HEALTH': 0.9541284403669725,
+ 'POLITICS': 0.9444444444444444,
+ 'SPORT': 0.9913793103448276}
+
+F Measure
+{'HEALTH': 0.9674418604651162,
+ 'POLITICS': 0.955056179775281,
+ 'SPORT': 0.970464135021097}
+Training test_bool ...
+Done
+Accurancy 0.9587301587301588
+Done
+
+-----------------LogisticRegressiontest_alpha-----------------
+
+         |       P     |
+         |       O     |
+         |   H   L     |
+         |   E   I   S |
+         |   A   T   P |
+         |   L   I   O |
+         |   T   C   R |
+         |   H   S   T |
+---------+-------------+
+  HEALTH |<103>  3   3 |
+POLITICS |   3 <84>  3 |
+   SPORT |   .   1<115>|
+---------+-------------+
+(row = reference; col = test)
+
+
+Accurancy:  0.9587301587301588
+Document HEALTH/U.N. calls on Israel Palestinians to prosecute Gaza war crimes.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Cycling-Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Ice bucket challenge Whats happened since - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Care in the UK The costs you face - BBC News.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/U.S. Congress inquiry into Planned Parenthood widens.txt: Label: HEALTH => Result: POLITICS
+Document POLITICS/NHS lags behind other health systems - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Man arrested in connection with San Francisco killing had been deported several times officials say  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/US moving F-16s to Turkey  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/X Japan to play concert premiere film in London.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Wife of retired Supreme Court Justice Stevens dies  Fox News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Exam focus damaging pupils mental health says NUT - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document SPORT/BBC Sport - World Anti-Doping Agency to investigate athletics doping claims.txt: Label: SPORT => Result: POLITICS
+
+Precision:
+{'HEALTH': 0.9716981132075472,
+ 'POLITICS': 0.9545454545454546,
+ 'SPORT': 0.9504132231404959}
+
+Recall
+{'HEALTH': 0.944954128440367,
+ 'POLITICS': 0.9333333333333333,
+ 'SPORT': 0.9913793103448276}
+
+F Measure
+{'HEALTH': 0.958139534883721,
+ 'POLITICS': 0.9438202247191011,
+ 'SPORT': 0.970464135021097}
+Training test_bool ...
+Done
+Accurancy 0.9714285714285714
+Done
+
+-----------------LogisticRegressiontest_stopwords-----------------
+
+         |       P     |
+         |       O     |
+         |   H   L     |
+         |   E   I   S |
+         |   A   T   P |
+         |   L   I   O |
+         |   T   C   R |
+         |   H   S   T |
+---------+-------------+
+  HEALTH |<105>  2   2 |
+POLITICS |   2 <85>  3 |
+   SPORT |   .   .<116>|
+---------+-------------+
+(row = reference; col = test)
+
+
+Accurancy:  0.9714285714285714
+Document HEALTH/U.N. calls on Israel Palestinians to prosecute Gaza war crimes.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Cycling-Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/U.S. Congress inquiry into Planned Parenthood widens.txt: Label: HEALTH => Result: POLITICS
+Document POLITICS/NHS lags behind other health systems - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/US moving F-16s to Turkey  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/X Japan to play concert premiere film in London.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Wife of retired Supreme Court Justice Stevens dies  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Exam focus damaging pupils mental health says NUT - BBC News.txt: Label: POLITICS => Result: HEALTH
+
+Precision:
+{'HEALTH': 0.9813084112149533,
+ 'POLITICS': 0.9770114942528736,
+ 'SPORT': 0.9586776859504132}
+
+Recall
+{'HEALTH': 0.963302752293578,
+ 'POLITICS': 0.9444444444444444,
+ 'SPORT': 1.0}
+
+F Measure
+{'HEALTH': 0.9722222222222223,
+ 'POLITICS': 0.9604519774011301,
+ 'SPORT': 0.9789029535864979}
+Training test_bool ...
+Done
+Accurancy 0.9682539682539683
+Done
+
+-----------------LogisticRegressiontest_tv_set-----------------
+
+         |       P     |
+         |       O     |
+         |   H   L     |
+         |   E   I   S |
+         |   A   T   P |
+         |   L   I   O |
+         |   T   C   R |
+         |   H   S   T |
+---------+-------------+
+  HEALTH |<104>  2   3 |
+POLITICS |   2 <85>  3 |
+   SPORT |   .   .<116>|
+---------+-------------+
+(row = reference; col = test)
+
+
+Accurancy:  0.9682539682539683
+Document HEALTH/U.N. calls on Israel Palestinians to prosecute Gaza war crimes.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Cycling-Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Care in the UK The costs you face - BBC News.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/U.S. Congress inquiry into Planned Parenthood widens.txt: Label: HEALTH => Result: POLITICS
+Document POLITICS/NHS lags behind other health systems - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/US moving F-16s to Turkey  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/X Japan to play concert premiere film in London.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Wife of retired Supreme Court Justice Stevens dies  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Exam focus damaging pupils mental health says NUT - BBC News.txt: Label: POLITICS => Result: HEALTH
+
+Precision:
+{'HEALTH': 0.9811320754716981,
+ 'POLITICS': 0.9770114942528736,
+ 'SPORT': 0.9508196721311475}
+
+Recall
+{'HEALTH': 0.9541284403669725,
+ 'POLITICS': 0.9444444444444444,
+ 'SPORT': 1.0}
+
+F Measure
+{'HEALTH': 0.9674418604651162,
+ 'POLITICS': 0.9604519774011301,
+ 'SPORT': 0.9747899159663864}
+Training test_bool ...
+Done
+Accurancy 0.9682539682539683
+Done
+
+-----------------LogisticRegressiontest_pos-----------------
+
+         |       P     |
+         |       O     |
+         |   H   L     |
+         |   E   I   S |
+         |   A   T   P |
+         |   L   I   O |
+         |   T   C   R |
+         |   H   S   T |
+---------+-------------+
+  HEALTH |<104>  2   3 |
+POLITICS |   3 <85>  2 |
+   SPORT |   .   .<116>|
+---------+-------------+
+(row = reference; col = test)
+
+
+Accurancy:  0.9682539682539683
+Document HEALTH/U.N. calls on Israel Palestinians to prosecute Gaza war crimes.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Cycling-Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Care in the UK The costs you face - BBC News.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/U.S. Congress inquiry into Planned Parenthood widens.txt: Label: HEALTH => Result: POLITICS
+Document POLITICS/NHS lags behind other health systems - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/US moving F-16s to Turkey  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/X Japan to play concert premiere film in London.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Wife of retired Supreme Court Justice Stevens dies  Fox News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Exam focus damaging pupils mental health says NUT - BBC News.txt: Label: POLITICS => Result: HEALTH
+
+Precision:
+{'HEALTH': 0.9719626168224299,
+ 'POLITICS': 0.9770114942528736,
+ 'SPORT': 0.9586776859504132}
+
+Recall
+{'HEALTH': 0.9541284403669725,
+ 'POLITICS': 0.9444444444444444,
+ 'SPORT': 1.0}
+
+F Measure
+{'HEALTH': 0.9629629629629631,
+ 'POLITICS': 0.9604519774011301,
+ 'SPORT': 0.9789029535864979}
+Training test_bool ...
+Done
+Accurancy 0.9650793650793651
+Done
+
+-----------------LogisticRegressiontest_stem-----------------
+
+         |       P     |
+         |       O     |
+         |   H   L     |
+         |   E   I   S |
+         |   A   T   P |
+         |   L   I   O |
+         |   T   C   R |
+         |   H   S   T |
+---------+-------------+
+  HEALTH |<103>  3   3 |
+POLITICS |   3 <85>  2 |
+   SPORT |   .   .<116>|
+---------+-------------+
+(row = reference; col = test)
+
+
+Accurancy:  0.9650793650793651
+Document HEALTH/U.N. calls on Israel Palestinians to prosecute Gaza war crimes.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Cycling-Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Care in the UK The costs you face - BBC News.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/U.S. Congress inquiry into Planned Parenthood widens.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Warning that adult social care under stress and strain - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document POLITICS/NHS lags behind other health systems - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/US moving F-16s to Turkey  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/X Japan to play concert premiere film in London.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Wife of retired Supreme Court Justice Stevens dies  Fox News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Exam focus damaging pupils mental health says NUT - BBC News.txt: Label: POLITICS => Result: HEALTH
+
+Precision:
+{'HEALTH': 0.9716981132075472,
+ 'POLITICS': 0.9659090909090909,
+ 'SPORT': 0.9586776859504132}
+
+Recall
+{'HEALTH': 0.944954128440367,
+ 'POLITICS': 0.9444444444444444,
+ 'SPORT': 1.0}
+
+F Measure
+{'HEALTH': 0.958139534883721,
+ 'POLITICS': 0.955056179775281,
+ 'SPORT': 0.9789029535864979}
+Training test_bool ...
+Done
+Accurancy 0.9682539682539683
+Done
+
+-----------------LogisticRegressionbinary_bag_of_words-----------------
+
+         |       P     |
+         |       O     |
+         |   H   L     |
+         |   E   I   S |
+         |   A   T   P |
+         |   L   I   O |
+         |   T   C   R |
+         |   H   S   T |
+---------+-------------+
+  HEALTH |<104>  2   3 |
+POLITICS |   3 <85>  2 |
+   SPORT |   .   .<116>|
+---------+-------------+
+(row = reference; col = test)
+
+
+Accurancy:  0.9682539682539683
+Document HEALTH/U.N. calls on Israel Palestinians to prosecute Gaza war crimes.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Cycling-Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Care in the UK The costs you face - BBC News.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/U.S. Congress inquiry into Planned Parenthood widens.txt: Label: HEALTH => Result: POLITICS
+Document POLITICS/NHS lags behind other health systems - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/US moving F-16s to Turkey  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/X Japan to play concert premiere film in London.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Wife of retired Supreme Court Justice Stevens dies  Fox News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Exam focus damaging pupils mental health says NUT - BBC News.txt: Label: POLITICS => Result: HEALTH
+
+Precision:
+{'HEALTH': 0.9719626168224299,
+ 'POLITICS': 0.9770114942528736,
+ 'SPORT': 0.9586776859504132}
+
+Recall
+{'HEALTH': 0.9541284403669725,
+ 'POLITICS': 0.9444444444444444,
+ 'SPORT': 1.0}
+
+F Measure
+{'HEALTH': 0.9629629629629631,
+ 'POLITICS': 0.9604519774011301,
+ 'SPORT': 0.9789029535864979}
