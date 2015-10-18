@@ -1,6 +1,6 @@
 from feature_extractor.bag_of_words import *
 from statistics import statistics, load_pickle
-from sklearn.tree import DecisionTreeClassifier
+from sklearn.naive_bayes import BernoulliNB
 from classification_main import load_classifier
 from trainer import trainer
 
@@ -13,10 +13,10 @@ def main():
                                 test_tv_set, test_pos, test_stem, binary_bag_of_words ]
 
     for extractor in test_feature_extractors:
-        trainer(train_feature_set, test_feature_set, extractor, DecisionTreeClassifier(), bool, "test_bool")
+        trainer(train_feature_set, test_feature_set, extractor, BernoulliNB(), bool, "test_bool")
         classifier = load_classifier("Classifiers/test_bool.pickle")
 
-        print("\n-----------------DecisionTreeClassifier" + extractor.__name__ + "-----------------\n")
+        print("\n-----------------BernoulliNB " + extractor.__name__ + "-----------------\n")
 
         statistics(classifier, extractor, test_feature_set, test_documents)
 
