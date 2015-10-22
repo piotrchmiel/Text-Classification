@@ -225,6 +225,546 @@ F Measure
  'POLITICS': 0.8375,
  'SPORT': 0.8837209302325582}
 
+----------------- DecisionTreeClassifier_bool -----------------
+
+         |       P     |
+         |       O     |
+         |   H   L     |
+         |   E   I   S |
+         |   A   T   P |
+         |   L   I   O |
+         |   T   C   R |
+         |   H   S   T |
+---------+-------------+
+  HEALTH | <91> 10   8 |
+POLITICS |  11 <73>  6 |
+   SPORT |   2   2<112>|
+---------+-------------+
+(row = reference; col = test)
+
+
+Accurancy:  0.8761904761904762
+Document HEALTH/U.N. calls on Israel Palestinians to prosecute Gaza war crimes.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Cycling-Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/The women driven mad with rage by HUNGER Hormones affecting appetites and moods can lead to hunger-induced anger  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/New York governor to send inspectors to NYC after deadly illness.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Mother with breast cancer shaves her hair into a bright pink MOHAWK  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/FDA Approves First Pill Made by 3D Printing  WebMD.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Ice bucket challenge Whats happened since - BBC News.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Sir Michael Parkinson is given the all-clear after prostate cancer treatment  Daily Mail Online.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/How to get a body like a Made In Chelsea star as revealed by shows trainer  Daily Mail Online.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Treat whole person by bringing behavioral health into primary care docs.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Medtronic recalls loading system for heart device.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Care in the UK The costs you face - BBC News.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/HALF of women wont reveal their natural hair colour to partners  Daily Mail Online.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Warning that adult social care under stress and strain - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/New York to clean cooling towers in outbreak area by Sunday mayor.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/17-stone mother drank NINE cups of green tea a day and drop eight dress sizes  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Weight-loss Thin Ice CLOTHING hacks your metabolism makers claim  Daily Mail Online.txt: Label: HEALTH => Result: SPORT
+Document POLITICS/Video Who is Camila Batmanghelidjh The Kids Company founder in 60 seconds - Telegraph.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/NHS lags behind other health systems - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/State senator asks Justice Department to monitor gay marriage in Texas.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/EU referendum Purdah explained by Prof Robert Hazell - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Lawmakers deny they were making out in car at Minnesota park  Fox News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Death toll in IS Yemen mosque attack rises to 32.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Jenny Palmer Former DUP councillor joins Ulster Unionist Party - BBC News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Black Lives Matter activists push Sanders off stage at Seattle event  Fox News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Krauthammer Police in the United States are defenseless  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Nissan invests 100m in Sunderland plant - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/X Japan to play concert premiere film in London.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/MPs urged to consider bombing IS targets in Syria - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Labours Andy Burnham pledges to scrap tuition fees - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Clinton warns GOP will repeal Obamacare.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Jeremy Corbyn Tony Blair must explain illegal Iraq war - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Wife of retired Supreme Court Justice Stevens dies  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Exam focus damaging pupils mental health says NUT - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document SPORT/BBC Sport - Manchester City Financial Fair Play restrictions lifted.txt: Label: SPORT => Result: HEALTH
+Document SPORT/Rosberg fastest in British GP practice.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Bernard Tomic dropped for Australia Davis Cup tie.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Ecclestone must help improve F1 image says Mallya.txt: Label: SPORT => Result: HEALTH
+
+Precision:
+{'HEALTH': 0.875,
+ 'POLITICS': 0.8588235294117647,
+ 'SPORT': 0.8888888888888888}
+
+Recall
+{'HEALTH': 0.8348623853211009,
+ 'POLITICS': 0.8111111111111111,
+ 'SPORT': 0.9655172413793104}
+
+F Measure
+{'HEALTH': 0.8544600938967137,
+ 'POLITICS': 0.8342857142857142,
+ 'SPORT': 0.9256198347107438}
+
+----------------- DecisionTreeClassifier_int -----------------
+
+         |       P     |
+         |       O     |
+         |   H   L     |
+         |   E   I   S |
+         |   A   T   P |
+         |   L   I   O |
+         |   T   C   R |
+         |   H   S   T |
+---------+-------------+
+  HEALTH | <91> 11   7 |
+POLITICS |  13 <71>  6 |
+   SPORT |   1   2<113>|
+---------+-------------+
+(row = reference; col = test)
+
+
+Accurancy:  0.873015873015873
+Document HEALTH/U.N. calls on Israel Palestinians to prosecute Gaza war crimes.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Cycling-Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/The women driven mad with rage by HUNGER Hormones affecting appetites and moods can lead to hunger-induced anger  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/New York governor to send inspectors to NYC after deadly illness.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Mother with breast cancer shaves her hair into a bright pink MOHAWK  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Why people say unpasteurised raw milks the ultimate health food  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/FDA Approves First Pill Made by 3D Printing  WebMD.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Ice bucket challenge Whats happened since - BBC News.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Sir Michael Parkinson is given the all-clear after prostate cancer treatment  Daily Mail Online.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/How to get a body like a Made In Chelsea star as revealed by shows trainer  Daily Mail Online.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/One Stillbirth Greatly Raises Odds for Another Study  WebMD.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Medtronic recalls loading system for heart device.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Care in the UK The costs you face - BBC News.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/HALF of women wont reveal their natural hair colour to partners  Daily Mail Online.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/U.S. Congress inquiry into Planned Parenthood widens.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Warning that adult social care under stress and strain - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/New York to clean cooling towers in outbreak area by Sunday mayor.txt: Label: HEALTH => Result: POLITICS
+Document POLITICS/Video Who is Camila Batmanghelidjh The Kids Company founder in 60 seconds - Telegraph.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/What I saw visiting post-Katrina New Orleans with President Bush.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/NHS lags behind other health systems - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/State senator asks Justice Department to monitor gay marriage in Texas.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/EU referendum Purdah explained by Prof Robert Hazell - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Lawmakers deny they were making out in car at Minnesota park  Fox News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Man arrested in connection with San Francisco killing had been deported several times officials say  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Death toll in IS Yemen mosque attack rises to 32.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Jenny Palmer Former DUP councillor joins Ulster Unionist Party - BBC News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Black Lives Matter activists push Sanders off stage at Seattle event  Fox News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Krauthammer Police in the United States are defenseless  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Nissan invests 100m in Sunderland plant - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/X Japan to play concert premiere film in London.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/MPs urged to consider bombing IS targets in Syria - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Labours Andy Burnham pledges to scrap tuition fees - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Clinton warns GOP will repeal Obamacare.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Jeremy Corbyn Tony Blair must explain illegal Iraq war - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Wife of retired Supreme Court Justice Stevens dies  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Exam focus damaging pupils mental health says NUT - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document SPORT/Rosberg fastest in British GP practice.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Bernard Tomic dropped for Australia Davis Cup tie.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Ecclestone must help improve F1 image says Mallya.txt: Label: SPORT => Result: HEALTH
+
+Precision:
+{'HEALTH': 0.8666666666666667,
+ 'POLITICS': 0.8452380952380952,
+ 'SPORT': 0.8968253968253969}
+
+Recall
+{'HEALTH': 0.8348623853211009,
+ 'POLITICS': 0.7888888888888889,
+ 'SPORT': 0.9741379310344828}
+
+F Measure
+{'HEALTH': 0.8504672897196263,
+ 'POLITICS': 0.8160919540229884,
+ 'SPORT': 0.933884297520661}
+
+----------------- DecisionTreeClassifier_tfidf -----------------
+
+         |       P     |
+         |       O     |
+         |   H   L     |
+         |   E   I   S |
+         |   A   T   P |
+         |   L   I   O |
+         |   T   C   R |
+         |   H   S   T |
+---------+-------------+
+  HEALTH | <89> 16   4 |
+POLITICS |  11 <70>  9 |
+   SPORT |   1   3<112>|
+---------+-------------+
+(row = reference; col = test)
+
+
+Accurancy:  0.8603174603174604
+Document HEALTH/NHS computer system is 4 years behind schedule and 26m over budget  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/U.N. calls on Israel Palestinians to prosecute Gaza war crimes.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Internet movies and books saying how sex ought to be putting couples under pressure  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Cycling-Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Premature babies cared for in Newcastles RVI - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/FAQ Kids and Picky Eating.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/The women driven mad with rage by HUNGER Hormones affecting appetites and moods can lead to hunger-induced anger  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/The anti-ageing MIND diet that halves your risk of dementia  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Scientists convinced European heat waves boosted by climate change.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Gateshead woman who vomits 20 TIMES a day due to Cyclical Vomiting Syndrome  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Sir Michael Parkinson is given the all-clear after prostate cancer treatment  Daily Mail Online.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Colorado movie gunman not faking psychosis defense witness says.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Could the position you SLEEP in affect your risk of Alzheimers  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Care in the UK The costs you face - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/HALF of women wont reveal their natural hair colour to partners  Daily Mail Online.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Washington state reports first U.S. measles death in 12 years.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Warning that adult social care under stress and strain - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Music in the operating room off-putting study suggests - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/17-stone mother drank NINE cups of green tea a day and drop eight dress sizes  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document POLITICS/Video Who is Camila Batmanghelidjh The Kids Company founder in 60 seconds - Telegraph.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/15-year jail term demanded for US envoys attacker.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/NHS lags behind other health systems - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/EU referendum Purdah explained by Prof Robert Hazell - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Lawmakers deny they were making out in car at Minnesota park  Fox News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Death toll in IS Yemen mosque attack rises to 32.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Obama mocks Republicans about 2016 Hunger Games.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/In Supreme Court term Obama wins big and loses small.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Jenny Palmer Former DUP councillor joins Ulster Unionist Party - BBC News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Black Lives Matter activists push Sanders off stage at Seattle event  Fox News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Putin biding his time Evidence shows buildup of Russian tanks generals in Ukraine  Fox News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Kids Company Did good PR mask deeper failings - Telegraph.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Yes or no Greeks vote on high-stakes bailout referendum.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Nissan invests 100m in Sunderland plant - BBC News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/The charity sector is crying out for a Big Bang - Telegraph.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Europes migrant crisis key questions.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Labour leadership Stella Creasy says party missed a trick over vote - BBC News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/X Japan to play concert premiere film in London.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Labours Andy Burnham pledges to scrap tuition fees - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Exam focus damaging pupils mental health says NUT - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document SPORT/BBC Sport - Nadir Ciftci Celtic must meet Dundee Uniteds 1.5m price.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Premier League opening-day quiz Beckham Klinsmann Ravanelli.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Ashes 2015 David Steele became an unlikely England hero in 1975.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Ecclestone must help improve F1 image says Mallya.txt: Label: SPORT => Result: HEALTH
+
+Precision:
+{'HEALTH': 0.8811881188118812,
+ 'POLITICS': 0.7865168539325843,
+ 'SPORT': 0.896}
+
+Recall
+{'HEALTH': 0.8165137614678899,
+ 'POLITICS': 0.7777777777777778,
+ 'SPORT': 0.9655172413793104}
+
+F Measure
+{'HEALTH': 0.8476190476190476,
+ 'POLITICS': 0.782122905027933,
+ 'SPORT': 0.929460580912863}
+
+----------------- KNeighborsClassifier_bool -----------------
+
+         |     P    |
+         |     O    |
+         |  H  L    |
+         |  E  I  S |
+         |  A  T  P |
+         |  L  I  O |
+         |  T  C  R |
+         |  H  S  T |
+---------+----------+
+  HEALTH |<65>44  . |
+POLITICS |  4<86> . |
+   SPORT |  3 37<76>|
+---------+----------+
+(row = reference; col = test)
+
+
+Accurancy:  0.7206349206349206
+Document HEALTH/5 essential tricks for treating a sunburn  Fox News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/NHS computer system is 4 years behind schedule and 26m over budget  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/U.N. calls on Israel Palestinians to prosecute Gaza war crimes.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Mass vaccination call to make rabies history - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Cycling-Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Regular Moderate Coffee Drinking Tied to Better Brain Health in Seniors  WebMD.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Premature babies cared for in Newcastles RVI - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/FAQ Kids and Picky Eating.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/The women driven mad with rage by HUNGER Hormones affecting appetites and moods can lead to hunger-induced anger  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Nursery school teacher cries CRYSTAL tears due to mystery condition  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Row breaks out over Greek medicine supplies.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/The anti-ageing MIND diet that halves your risk of dementia  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Pear juice can reduce effects of a nights drinking by up to a fifth  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Liberia investigating animal link after Ebola re-emerges.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Scientists convinced European heat waves boosted by climate change.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Kelloggs Corn Flakes invented to stop masturbation and sexual desire  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/The dogs that can help to detect prostate cancer - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Scientists Spot What Keeps Moles From Becoming Melanomas  WebMD.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/FDA Looking at Essure Birth Control Device Safety.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Four million Britons have not drunk a glass of water in over a week  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Online game may control snacking - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Test that could predict breast cancer nine years before it strikes  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Brithdir Care Home NMC says poor care led to patient deaths - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Ice bucket challenge Whats happened since - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Sir Michael Parkinson is given the all-clear after prostate cancer treatment  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Experimental Gel Could Prevent Genital Herpes Infection  WebMD.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/One Stillbirth Greatly Raises Odds for Another Study  WebMD.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Colorado movie gunman not faking psychosis defense witness says.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Fizzy drinks kill 184000 a year through diabetes heart disease and cancer  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Health insurer Centene adds muscle with 6.3 billion Health Net deal.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/NHS may have been overcharged millions for common drug by Pfizer and Flynn Pharma  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Tangled up in blue A sticky end to sleeping sickness - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Medtronic recalls loading system for heart device.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Tests rule out MERS in Czech tour guide.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Irritable Bowel Syndrome Myth or Fact IBS and Stress Yeast Food and More .txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Could the position you SLEEP in affect your risk of Alzheimers  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Care in the UK The costs you face - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/U.S. Congress inquiry into Planned Parenthood widens.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Warning that adult social care under stress and strain - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Diabetes Rates Fall in Neighborhoods With Healthy Food Parks and Gyms  WebMD.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Kolkata surgeons find 360 GALLSTONES inside Indian woman  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Foods that trigger headaches  Fox News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/New York to clean cooling towers in outbreak area by Sunday mayor.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/17-stone mother drank NINE cups of green tea a day and drop eight dress sizes  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document POLITICS/NHS lags behind other health systems - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Video Jon Stewart signs off from The Daily Show - Telegraph.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/The charity sector is crying out for a Big Bang - Telegraph.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/What are the police for  - Telegraph.txt: Label: POLITICS => Result: HEALTH
+Document SPORT/Ex-All Black Mils Muliaina charged with sexual assault - BBC News.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Manchester City Financial Fair Play restrictions lifted.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Lewis Hamilton column Silverstone Senna and Hendrix.txt: Label: SPORT => Result: POLITICS
+Document SPORT/United States asks Swiss to extradite seven in FIFA inquiry.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Argentine F1 legend Juan Manuel Fangio exhumed - BBC News.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Pliskova continues her ascent with semi berth at Stanford.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Phelps sends message to Rio contenders with U.S. victory.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Nadir Ciftci Celtic must meet Dundee Uniteds 1.5m price.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Button has little to smile about at Silverstone.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Lawsuit filed against NASCARs Stewart in fatal dirt-track accident.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Gushiken at last happy as boxer after Hall of Fame induction.txt: Label: SPORT => Result: HEALTH
+Document SPORT/Britains Groves suffers head injury in boating accident.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Tour de France 2015 Rohan Dennis wins Utrecht Grand Depart.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Brendon McCullum hits record 158 in T20 Blast for Warwickshire.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Soccer-Referees in unwanted spotlight ahead of World Cup final.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Horseracing-Kauto Star put down after breaking pelvis in fall.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Tour de France 2015 Luke Rowe geared up to protect Chris Froome.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Bernard Tomic dropped for Australia Davis Cup tie.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Samantha Murray Briton loses world modern pentathlon title.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Super League Hull FC v Wakefield.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - British Championships No problem with plastic Brits - Cram.txt: Label: SPORT => Result: HEALTH
+Document SPORT/BBC Sport - Swimming David Wilkie backs Ross Murdoch for Rio success.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - World Anti-Doping Agency to investigate athletics doping claims.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Japan finds new motivation for World Cup final.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Cycling-Nibali in fine shape to defend Tour title.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Froome says GC battle will commence from day one.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Kersee wants same-day testing by event for top athletes.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Premier League opening-day quiz Beckham Klinsmann Ravanelli.txt: Label: SPORT => Result: POLITICS
+Document SPORT/China to host World Cup in 2019.txt: Label: SPORT => Result: POLITICS
+Document SPORT/European-Mammadov plans to leave lasting memory Adams triumphs.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Ashes 2015 David Steele became an unlikely England hero in 1975.txt: Label: SPORT => Result: POLITICS
+Document SPORT/South Dakota tribe returning 25000 donation from Redskins.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Floyd Mayweather defends Andre Berto pick Berto mocks Money for Pacquiao fight.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Soccer-Mihajlovic wants to Milan to be feared again.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Australian Open Jamie Jones beats top-ranked Mark Selby.txt: Label: SPORT => Result: HEALTH
+Document SPORT/Driver Yannick Gingras has the best shot in Hambletonian.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Soccer-Tommasi comes out of retirement at 41 to play in Europe.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Wimbledon still abuzz over dread-locked Brown.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Tour de France 2015 Chris Froome expects epic battle.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Ecclestone must help improve F1 image says Mallya.txt: Label: SPORT => Result: POLITICS
+
+Precision:
+{'HEALTH': 0.9027777777777778,
+ 'POLITICS': 0.5149700598802395,
+ 'SPORT': 1.0}
+
+Recall
+{'HEALTH': 0.5963302752293578,
+ 'POLITICS': 0.9555555555555556,
+ 'SPORT': 0.6551724137931034}
+
+F Measure
+{'HEALTH': 0.7182320441988951,
+ 'POLITICS': 0.669260700389105,
+ 'SPORT': 0.7916666666666667}
+
+----------------- KNeighborsClassifier_int -----------------
+
+         |     P    |
+         |     O    |
+         |  H  L    |
+         |  E  I  S |
+         |  A  T  P |
+         |  L  I  O |
+         |  T  C  R |
+         |  H  S  T |
+---------+----------+
+  HEALTH |<57>52  . |
+POLITICS |  2<88> . |
+   SPORT |  3 45<68>|
+---------+----------+
+(row = reference; col = test)
+
+
+Accurancy:  0.6761904761904762
+Document HEALTH/5 essential tricks for treating a sunburn  Fox News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Bodybuilder Supplement Abuse a Growing Concern  WebMD.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/U.N. calls on Israel Palestinians to prosecute Gaza war crimes.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Internet movies and books saying how sex ought to be putting couples under pressure  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Niall Kirkpatrick warns of unlicensed fillers danger on Botched Up Bodies  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Mass vaccination call to make rabies history - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Cycling-Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Premature babies cared for in Newcastles RVI - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Nursery school teacher cries CRYSTAL tears due to mystery condition  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Flavored Cigarettes Still Popular Online Despite U.S. Ban  WebMD.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Row breaks out over Greek medicine supplies.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Mother with breast cancer shaves her hair into a bright pink MOHAWK  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/NHS lags behind other countries health systems - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Hand washing web programme helps reduce infections - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Pear juice can reduce effects of a nights drinking by up to a fifth  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/10 Dead in NYC Legionnaires Disease Outbreak.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Kenyas main port sacks 27 strike leaders as losses hit 2 mln.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Expiry dates for pillows trainers bras sponges and toothbrushes  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Scientists convinced European heat waves boosted by climate change.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Kelloggs Corn Flakes invented to stop masturbation and sexual desire  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/The dogs that can help to detect prostate cancer - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Scientists Spot What Keeps Moles From Becoming Melanomas  WebMD.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/FDA Looking at Essure Birth Control Device Safety.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Four million Britons have not drunk a glass of water in over a week  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Online game may control snacking - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Brithdir Care Home NMC says poor care led to patient deaths - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Ice bucket challenge Whats happened since - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Experimental Gel Could Prevent Genital Herpes Infection  WebMD.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/One Stillbirth Greatly Raises Odds for Another Study  WebMD.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Colorado movie gunman not faking psychosis defense witness says.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Health insurer Centene adds muscle with 6.3 billion Health Net deal.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Most U.S. Hepatitis C Infections May Be Missed Study  WebMD.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/NHS may have been overcharged millions for common drug by Pfizer and Flynn Pharma  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Tangled up in blue A sticky end to sleeping sickness - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Medtronic recalls loading system for heart device.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Tests rule out MERS in Czech tour guide.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Irritable Bowel Syndrome Myth or Fact IBS and Stress Yeast Food and More .txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Emily Titterington with a phobia of toilets died from heart attack caused by constipation  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Build Stronger Bones With Exercise Walking Stretching Strength Training and More.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Care in the UK The costs you face - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Weight-Loss Surgerys Benefits May Fade With Time Study Suggests  WebMD.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Common Antidepressants Linked to Higher Fracture Odds in Menopausal Women  WebMD.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/U.S. Congress inquiry into Planned Parenthood widens.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Warning that adult social care under stress and strain - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Heart risk for slow thinkers Over-75s with the poorest mental agility found to be 85 more likely to suffer an attack than those in the highest group  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Diabetes Rates Fall in Neighborhoods With Healthy Food Parks and Gyms  WebMD.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Kolkata surgeons find 360 GALLSTONES inside Indian woman  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Foods that trigger headaches  Fox News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/New York to clean cooling towers in outbreak area by Sunday mayor.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/17-stone mother drank NINE cups of green tea a day and drop eight dress sizes  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Confusing food labels could be making us fat due to information overload  Daily Mail Online.txt: Label: HEALTH => Result: POLITICS
+Document POLITICS/NHS lags behind other health systems - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/In Supreme Court term Obama wins big and loses small.txt: Label: POLITICS => Result: HEALTH
+Document SPORT/AP Source Heat now among clubs meeting with Aldridge.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Soccer-Norwegian championship results and standings.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Tom Ince Derby County sign Hull City winger for club record fee.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Soccer-Colombian championship liga aguila ii results and standings.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Ex-All Black Mils Muliaina charged with sexual assault - BBC News.txt: Label: SPORT => Result: POLITICS
+Document SPORT/NBA summer referees wearing headsets will use replay.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Manchester City Financial Fair Play restrictions lifted.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Lewis Hamilton column Silverstone Senna and Hendrix.txt: Label: SPORT => Result: HEALTH
+Document SPORT/United States asks Swiss to extradite seven in FIFA inquiry.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Argentine F1 legend Juan Manuel Fangio exhumed - BBC News.txt: Label: SPORT => Result: POLITICS
+Document SPORT/GB Packers tight end Quarless charged with firing a gun.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Nadir Ciftci Celtic must meet Dundee Uniteds 1.5m price.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Barcelona loans defender Montoya Torralbo to Inter Milan.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Nibali in fine shape to defend Tour title.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Button has little to smile about at Silverstone.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Lawsuit filed against NASCARs Stewart in fatal dirt-track accident.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Mauro Diaz leads FC Dallas over Revolution 3-0.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Senators Mike Hoffman awarded 2 million in arbitration.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Britains Groves suffers head injury in boating accident.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Brendon McCullum hits record 158 in T20 Blast for Warwickshire.txt: Label: SPORT => Result: HEALTH
+Document SPORT/Soccer-Australia striker Burns on verge of joining Tokyo.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Horseracing-Kauto Star put down after breaking pelvis in fall.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Tour de France 2015 Luke Rowe geared up to protect Chris Froome.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Bernard Tomic dropped for Australia Davis Cup tie.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Wimbledon 2015 Nick Kyrgios beats Milos Raonic in round three.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Samantha Murray Briton loses world modern pentathlon title.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Super League Hull FC v Wakefield.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Soccer-Mexican championship first stage results and standings.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - British Championships No problem with plastic Brits - Cram.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Swimming David Wilkie backs Ross Murdoch for Rio success.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - World Anti-Doping Agency to investigate athletics doping claims.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Patrick OConnell New mural in Belfast to FC Barcelona saviour - BBC News.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Theo Fages Salford Red Devils scrum-half resigns from club.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Cycling-Nibali in fine shape to defend Tour title.txt: Label: SPORT => Result: HEALTH
+Document SPORT/Kersee wants same-day testing by event for top athletes.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Premier League opening-day quiz Beckham Klinsmann Ravanelli.txt: Label: SPORT => Result: POLITICS
+Document SPORT/European-Mammadov plans to leave lasting memory Adams triumphs.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Ashes 2015 David Steele became an unlikely England hero in 1975.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Dennis defends yellow jersey on 2nd stage of Tour de France.txt: Label: SPORT => Result: POLITICS
+Document SPORT/South Dakota tribe returning 25000 donation from Redskins.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Australian Open Jamie Jones beats top-ranked Mark Selby.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Soccer-Tommasi comes out of retirement at 41 to play in Europe.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Wimbledon still abuzz over dread-locked Brown.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Tour de France 2015 Chris Froome expects epic battle.txt: Label: SPORT => Result: POLITICS
+Document SPORT/BBC Sport - Scotland Greig Laidlaw hints at World Cup captain decision.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Keanes hat trick lifts Galaxy over Toronto FC 4-0.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Soccer-Bolivian championship results and standings.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Ecclestone must help improve F1 image says Mallya.txt: Label: SPORT => Result: POLITICS
+
+Precision:
+{'HEALTH': 0.9193548387096774,
+ 'POLITICS': 0.4756756756756757,
+ 'SPORT': 1.0}
+
+Recall
+{'HEALTH': 0.5229357798165137,
+ 'POLITICS': 0.9777777777777777,
+ 'SPORT': 0.5862068965517241}
+
+F Measure
+{'HEALTH': 0.6666666666666666,
+ 'POLITICS': 0.64,
+ 'SPORT': 0.7391304347826086}
+
+----------------- KNeighborsClassifier_tfidf -----------------
+
+         |       P     |
+         |       O     |
+         |   H   L     |
+         |   E   I   S |
+         |   A   T   P |
+         |   L   I   O |
+         |   T   C   R |
+         |   H   S   T |
+---------+-------------+
+  HEALTH |<101>  6   2 |
+POLITICS |   4 <84>  2 |
+   SPORT |   1   2<113>|
+---------+-------------+
+(row = reference; col = test)
+
+
+Accurancy:  0.946031746031746
+Document HEALTH/U.N. calls on Israel Palestinians to prosecute Gaza war crimes.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Cycling-Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Row breaks out over Greek medicine supplies.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Kenyas main port sacks 27 strike leaders as losses hit 2 mln.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Ice bucket challenge Whats happened since - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/U.S. Congress inquiry into Planned Parenthood widens.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Warning that adult social care under stress and strain - BBC News.txt: Label: HEALTH => Result: POLITICS
+Document POLITICS/Scotland to ban GM crop growing - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/15-year jail term demanded for US envoys attacker.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/NHS lags behind other health systems - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Lawmakers deny they were making out in car at Minnesota park  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/David Cameron plans permanent memorial to Tunisia terror victims  - Telegraph.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/X Japan to play concert premiere film in London.txt: Label: POLITICS => Result: SPORT
+Document SPORT/Ex-All Black Mils Muliaina charged with sexual assault - BBC News.txt: Label: SPORT => Result: POLITICS
+Document SPORT/Argentine F1 legend Juan Manuel Fangio exhumed - BBC News.txt: Label: SPORT => Result: HEALTH
+Document SPORT/BBC Sport - Premier League opening-day quiz Beckham Klinsmann Ravanelli.txt: Label: SPORT => Result: POLITICS
+
+Precision:
+{'HEALTH': 0.9528301886792453,
+ 'POLITICS': 0.9130434782608695,
+ 'SPORT': 0.9658119658119658}
+
+Recall
+{'HEALTH': 0.926605504587156,
+ 'POLITICS': 0.9333333333333333,
+ 'SPORT': 0.9741379310344828}
+
+F Measure
+{'HEALTH': 0.9395348837209302,
+ 'POLITICS': 0.9230769230769229,
+ 'SPORT': 0.9699570815450644}
+
 ----------------- LinearSVC_bool -----------------
 
          |       P     |
@@ -503,3 +1043,73 @@ F Measure
 {'HEALTH': 0.9585253456221198,
  'POLITICS': 0.9545454545454545,
  'SPORT': 0.970464135021097}
+
+----------------- test_bool -----------------
+
+         |       P     |
+         |       O     |
+         |   H   L     |
+         |   E   I   S |
+         |   A   T   P |
+         |   L   I   O |
+         |   T   C   R |
+         |   H   S   T |
+---------+-------------+
+  HEALTH | <99>  2   8 |
+POLITICS |   3 <67> 20 |
+   SPORT |   1   1<114>|
+---------+-------------+
+(row = reference; col = test)
+
+
+Accurancy:  0.8888888888888888
+Document HEALTH/U.N. calls on Israel Palestinians to prosecute Gaza war crimes.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Cycling-Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Premature babies cared for in Newcastles RVI - BBC News.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/NHS lags behind other countries health systems - BBC News.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Brithdir Care Home NMC says poor care led to patient deaths - BBC News.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Pedal power rules the roads in Utrecht.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Tangled up in blue A sticky end to sleeping sickness - BBC News.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/Care in the UK The costs you face - BBC News.txt: Label: HEALTH => Result: SPORT
+Document HEALTH/U.S. Congress inquiry into Planned Parenthood widens.txt: Label: HEALTH => Result: POLITICS
+Document HEALTH/Warning that adult social care under stress and strain - BBC News.txt: Label: HEALTH => Result: SPORT
+Document POLITICS/Labour leadership Andy Burnham car share - BBC News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Scotland to ban GM crop growing - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/NHS lags behind other health systems - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Israel targets Hamas base after gunfire from Gaza.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/State senator asks Justice Department to monitor gay marriage in Texas.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/EU referendum Purdah explained by Prof Robert Hazell - BBC News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Death toll in IS Yemen mosque attack rises to 32.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Changes in inheritance tax threshold after April 2017 - BBC News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Guatemalan president accused of corruption resigns spokesman.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Greek pro-bailout Yes vote in referendum ahead survey.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Video Jon Stewart signs off from The Daily Show - Telegraph.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Krauthammer Police in the United States are defenseless  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Nissan invests 100m in Sunderland plant - BBC News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/US moving F-16s to Turkey  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/White House No threat detected from China navy ships in Bering Sea.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/George Osborne vies with Larry the cat to be chief mouser - Telegraph.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/X Japan to play concert premiere film in London.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/MPs urged to consider bombing IS targets in Syria - BBC News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Bush discusses debate performance says analyzing Trump is above his paygrade  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Jeremy Corbyn Tony Blair must explain illegal Iraq war - BBC News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Wife of retired Supreme Court Justice Stevens dies  Fox News.txt: Label: POLITICS => Result: SPORT
+Document POLITICS/Exam focus damaging pupils mental health says NUT - BBC News.txt: Label: POLITICS => Result: HEALTH
+Document POLITICS/Fox-hunting ban repeal Portillo vs. Brian May - BBC News.txt: Label: POLITICS => Result: SPORT
+Document SPORT/BBC Sport - World Anti-Doping Agency to investigate athletics doping claims.txt: Label: SPORT => Result: HEALTH
+Document SPORT/South Dakota tribe returning 25000 donation from Redskins.txt: Label: SPORT => Result: POLITICS
+
+Precision:
+{'HEALTH': 0.9611650485436893,
+ 'POLITICS': 0.9571428571428572,
+ 'SPORT': 0.8028169014084507}
+
+Recall
+{'HEALTH': 0.908256880733945,
+ 'POLITICS': 0.7444444444444445,
+ 'SPORT': 0.9827586206896551}
+
+F Measure
+{'HEALTH': 0.9339622641509434,
+ 'POLITICS': 0.8375,
+ 'SPORT': 0.8837209302325582}
