@@ -42,7 +42,7 @@ def main():
     train_documents = load_pickle("Classifiers/train_feature_set.pickle")
     test_documents = load_pickle("Classifiers/test_feature_set.pickle")
 
-    algorithms = [DecisionTreeClassifier(), KNeighborsClassifier()]#LinearSVC(), LogisticRegression(), BernoulliNB()]
+    algorithms = [DecisionTreeClassifier(), KNeighborsClassifier(), LinearSVC(), LogisticRegression(), BernoulliNB()]
 
     for algorithm in algorithms:
         class_name = algorithm.__class__.__name__
