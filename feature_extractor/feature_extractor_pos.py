@@ -38,10 +38,8 @@ class FeatrueExtractorPos(object):
 
         feature_set = {}
         for word in self.pos_generator():
-            if word in feature_set:
-                feature_set[word] += 1
-            else:
-                feature_set[word] = 1
+            feature_set[word] = feature_set.get(word, 0) + 1
+
         for bigram in self.collocations_finder.bigram_finder(self.words):
             feature_set[' '.join(bigram)] = 2
         for trigram in self.collocations_finder.trigram_finder(self.words):

@@ -5,7 +5,6 @@ from feature_extractor.test_extractor import *
 
 tagger = nltk.data.load(nltk.tag._POS_TAGGER)
 
-
 def binary_bag_of_words(words, extractor=FeatrueExtractorPos, tagger=tagger):
     extractor = extractor(words, tagger, binary=True)
     return extractor.extract_features()

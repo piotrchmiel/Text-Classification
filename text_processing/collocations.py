@@ -27,3 +27,19 @@ class CollocationsFinder(object):
         tcf.apply_freq_filter(2)
         return tcf.nbest(TrigramAssocMeasures.likelihood_ratio, 4)
 
+class SklearnClassifier(ClassifierI):
+
+    def __init__(self, estimator, dtype=float, sparse=True):
+
+        self._clf = estimator
+        self._encoder = LabelEncoder()
+        self._vectorizer = DictVectorizer(dtype=dtype, sparse=sparse)
+
+    def train(self, labeled_featuresets):
+
+        X, y = list(compat.izip(*labeled_featuresets))
+        X = self._vectorizer.fit_transform(X)
+        y = self._encoder.fit_transform(y)
+        self._clf.fit(X, y)
+
+        return self
