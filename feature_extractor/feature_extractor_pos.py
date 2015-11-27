@@ -34,6 +34,7 @@ class FeatrueExtractorPos(object):
 
         return feature_set
 
+
     def count_feature_set(self):
 
         feature_set = {}
